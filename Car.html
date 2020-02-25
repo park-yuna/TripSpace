@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Car.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <!-- bin/jquery.slider.min.css -->
+	<link rel="stylesheet" href="css/jslider.css" type="text/css">
+	<link rel="stylesheet" href="css/jslider.plastic.css" type="text/css">
+    <!-- end -->
+
+    <!-- bin/jquery.slider.min.js -->
+	<script type="text/javascript" src="js/jshashtable-2.1_src.js"></script>
+	<script type="text/javascript" src="js/jquery.numberformatter-1.2.3.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/jquery.dependClass-0.1.js"></script>
+	<script type="text/javascript" src="js/draggable-0.1.js"></script>
+	<script type="text/javascript" src="js/jquery.slider.js"></script>
+    <!-- end -->
+
+</head>
+<body>
+    <div class="bg2"></div>
+    <header class="header">
+        <nav>
+            <ul class="gnb">
+                <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logoName" src="./img/logo.png" alt="">
+                <img class="logoImg" src="./img/solar-system.png" alt="">
+            </a>
+        </div>
+        <div class="mainMenu">
+            <ul class="mainNav" class="active">
+                <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                  <ul id="Subs1" class="subNav">
+                    <li class="underSub"><a href="./Asia.html">Asia<br><span class="subSpan">아시아</span></a></li>
+                    <li class="underSub"><a href="./America.html">America<br><span class="subSpan">미주(북/남미)</span></a></li>
+                    <li class="underSub"><a href="./Europe.html">Europe<br><span class="subSpan">유럽</span></a></li>
+                    <li class="underSub"><a href="./Oceania.html">Oceania<br><span class="subSpan">대서양</span></a></li>
+                    <li class="underSub"><a href="./Africa.html">Africa etc.<br><span class="subSpan">아프리카</span></a></li>
+                  </ul>
+                </li>
+                <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                  <ul id="Subs2" class="subNav">
+                    <li class="underSub"><a href="./Airline.html">Airline<br><span class="subSpan">항공</span></a></li>
+                    <li class="underSub"><a href="./hotel.html">Hotel<br><span class="subSpan">호텔</span></a></li>
+                    <li class="underSub"><a href="./Car.html">Car Rental<br><span class="subSpan">렌터카</span></a></li>
+                    <li class="underSub"><a href="./Pass.html">Pass/Ticket<br><span class="subSpan">패스 / 입장권</span></a></li>
+                  </ul>
+                </li>
+                <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                <div class="nav-underline"></div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="clear"></div>
+
+    <div class="container2">
+        <!-- <img class="passport" src="./img/stamp.png"> -->
+        <p class="sec-sub2">렌터카 예약 및 조회</p>
+        <h1 class="sec-tit2">Car Rental</h1>
+        <!-- <hr class="horizon"> -->
+        <div class="division">
+            <ul>
+                <li id="long" class="long">장기 렌터카</li>
+                <li id="shot" class="shot">단기 렌터카</li>
+            </ul>
+        </div>
+    <div class="RentalContainer">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>차량 유형 설정</p>
+            <div class="ticketChk">
+
+                <input id="ex_chk6" class="tic" type="radio" name="color" value="red" checked>
+                <label for="ex_chk6" id="ex_chk66">신차</label>
+
+                <input id="ex_chk7" class="tic" type="radio" name="color" value="red">
+                <label for="ex_chk7" id="ex_chk77">중고차</label>
+            </div>
+        </div>
+        
+        <hr class="horizon2">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>차량 선택</p>
+            <div id="ticketBox2" class="ticketBox">
+                <div class="line_head line1">
+                    <select id="carSelector" class="select_option">
+                        <option value="1">제조사 선택</option>
+                        <option value="2">현대자동차</option>
+                        <option value="3">기아자동차</option>
+                        <option value="4">GM대우자동차</option>
+                        <option value="5">르노/삼성자동차</option>
+                        <option value="6">쌍용자동차</option>
+                        <option value="7">테슬라 코리아</option>
+                    </select>
+                    <label><i class="fas fa-cog"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <select id="carType" class="select_option">
+                        <option value="1">차량 유형 선택</option>
+                    </select>
+                    <label><i class="fas fa-signal"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <select id="carKind" class="select_option">
+                        <option value="1">차량 선택</option>
+                    </select>
+                    <label><i class="fas fa-car-side"></i></label>
+                </div>
+            </div>
+        </div>
+        <hr class="horizon2">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>요금 선택</p>
+            <div class="ticketChk">
+                <div class="layout-slider" style="width: 100%">
+                    월 렌탈료 
+                    <span style="display: inline-block; width: 400px; padding: 0 5px;margin: 0 10px;">
+                        <input id="Slider1" type="slider" name="price" value="300000.5;600000" />
+                    </span>
+                    <span id="rangeSpan" class="rangeSpan" style="background-color: rgb(36, 42, 58); font-size:13px; color:#ffffff; display: inline-block; width: 180px; padding: 5px 10px; text-align: center; border-radius: 10px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr class="horizon2">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>연료 선택</p>
+            <div class="ticketChk">
+
+                <input id="ex_chk8" class="tic" type="radio" name="color" value="red" checked>
+                <label for="ex_chk8" id="ex_chk88">전체</label>
+
+                <input id="ex_chk9" class="checkTic" type="checkbox"" name="color" value="red">
+                <label for="ex_chk9" id="ex_chk99" class="checkTic">휘발유</label>
+
+                <input id="ex_chk10" class="checkTic" type="checkbox" name="color" value="red">
+                <label for="ex_chk10" id="ex_chk1010" class="checkTic">경유</label>
+
+                <input id="ex_chk11" class="checkTic" type="checkbox" name="color" value="red">
+                <label for="ex_chk11" id="ex_chk1111" class="checkTic">LPG</label>
+
+                <input id="ex_chk12" class="checkTic" type="checkbox" name="color" value="red">
+                <label for="ex_chk12" id="ex_chk1212" class="checkTic">하이브리드</label>
+
+                <input id="ex_chk13" class="checkTic" type="checkbox" name="color" value="red">
+                <label for="ex_chk13" id="ex_chk1313" class="checkTic">전기</label>
+            </div>
+        </div>
+            <hr class="horizon2">
+            <button class="b-button2">Search</button>
+            <div class="dott"></div>
+            <div class="dott"></div>
+            <div class="dott3"></div>
+            <div class="dott3"></div>
+        </div> <!--  RentalContainer -->
+
+        <div class="RentalContainer2">
+            <div class="Ticketing-Section">
+                <p class="under"><i class="fas fa-thumbtack"></i>차량 유형 설정</p>
+                <div class="ticketChk">
+    
+                    <input id="ex_chk14" class="tic" type="radio" name="color" value="red" checked>
+                    <label for="ex_chk14" id="ex_chk1414">제주</label>
+    
+                    <input id="ex_chk15" class="tic" type="radio" name="color" value="red">
+                    <label for="ex_chk15" id="ex_chk1515">내륙</label>
+
+                    <input id="ex_chk16" class="tic" type="radio" name="color" value="red">
+                    <label for="ex_chk16" id="ex_chk1616">중고차</label>
+                </div>
+            </div>
+            <hr class="horizon2">
+            <div class="Ticketing-Section">
+                <p class="under"><i class="fas fa-thumbtack"></i>대여일 선택</p>
+                <div id="ticketBox2" class="ticketBox">
+                    <div class="line_heads line1">
+                        <input id="datepicker1" type="text" placeholder="대여 시작"/>
+                        <label><i class="fas fa-calendar-alt icon"></i></label>
+                    </div>
+                    <div class="line_heads line1">
+                        <input id="datepicker2" type="text" placeholder="대여 반납"/>
+                        <label><i class="fas fa-calendar-alt icon"></i></label>
+                    </div>
+                </div>
+            </div>
+            <hr class="horizon2">
+            <div class="Ticketing-Section">
+                <p class="under"><i class="fas fa-thumbtack"></i>지점 선택</p>
+                <div id="ticketBox2" class="ticketBox">
+                    <div class="line_head line1">
+                        <select id="carSelector" class="select_option">
+                            <option value="1">대여 지점</option>
+                            <option value="서대문지점">서대문지점</option>
+                            <option value="건대지점">건대지점</option>
+                            <option value="김포공항지점">김포공항지점</option>
+                            <option value="양재지점">양재지점</option>
+                            <option value="서울대지점">서울대지점</option>
+                            <option value="상봉지점">상봉지점</option>
+                            <option value="가양지점">가양지점</option>
+                            <option value="목동지점">목동지점</option>
+                            <option value="프라임남산지점">프라임남산지점</option>
+                            <option value="경기">경기</option>
+                            <option value="충청">충청</option>
+                            <option value="강원">강원</option>
+                            <option value="경상">경상</option>
+                            <option value="전라">전라</option>
+                            <option value="인천">인천</option>
+                            <option value="제주">제주</option>
+                        </select>
+                        <label><i class="fas fa-cog"></i></label>
+                    </div>
+                    <div class="line_head line3">
+                        <select id="carSelector2" class="select_option">
+                            <option value="1">반납 지점</option>
+                            <option value="서대문지점">서대문지점</option>
+                            <option value="건대지점">건대지점</option>
+                            <option value="김포공항지점">김포공항지점</option>
+                            <option value="양재지점">양재지점</option>
+                            <option value="서울대지점">서울대지점</option>
+                            <option value="상봉지점">상봉지점</option>
+                            <option value="가양지점">가양지점</option>
+                            <option value="목동지점">목동지점</option>
+                            <option value="프라임남산지점">프라임남산지점</option>
+                            <option value="경기">경기</option>
+                            <option value="충청">충청</option>
+                            <option value="강원">강원</option>
+                            <option value="경상">경상</option>
+                            <option value="전라">전라</option>
+                            <option value="인천">인천</option>
+                            <option value="제주">제주</option>
+                        </select>
+                        <label><i class="fas fa-signal"></i></label>
+                    </div>
+                    <div class="line_head line3">
+                        <select id="carKind" class="select_option">
+                            <option value="1">차량 선택</option>
+                            <option value="소형">소형</option>
+                            <option value="중형">중형</option>
+                            <option value="대형">대형</option>
+                            <option value="승합차">승합차</option>
+                            <option value="SUV">SUV</option>
+                            <option value="수입/전기차">수입/전기차</option>
+                        </select>
+                        <label><i class="fas fa-car-side"></i></label>
+                    </div>
+                </div>
+            </div>
+            
+                <hr class="horizon2">
+                <button class="b-button2">Search</button>
+                <div class="dott"></div>
+                <div class="dott"></div>
+                <div class="dott3"></div>
+                <div class="dott3"></div>
+            </div> <!--  RentalContainer2 -->
+
+    </div> <!--  container2 -->
+    
+
+    <div id="wrapper">
+        <div class="bar"></div>
+        <div class="bar2"></div>
+        <div class="dott2"></div>
+        <div class="dott2"></div>
+
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="dott4"></div>
+        <div class="dott4"></div>
+
+        <div class="name-Section">
+            <p class="sec-sub2">지금 인기 BEST 상품을 만나보세요.</p>
+            <h3 class="sec-tit2">BEST HOTEL</h3>
+            <hr class="horizon3">
+        </div>
+        
+        <div id="slider-wrap">
+            <ul id="slider">
+                <li data-color="#1abc9c">
+                    <div class="sliderInfo">
+                        <h1 id="sec-tits" class="sec-tits">새로운 TURBO엔진으로 <br>효율과 퍼포먼스를 모두 갖추다.</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">말리부 22만원대로 쏜다!</span>
+                            <br>
+                            <span id="score" class="score">(보험료/세금 포함, 제휴카드 할인가)</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>                
+                    <img src="./img/CarSub1.jpg">
+                </li>
+                
+                <li data-color="#3498db">
+                    <div class="sliderInfo2">
+                        <h1 id="sec-tits" class="sec-tits">디자인, 고급스러움,<br> 정숙성,주행성능 모두 잡다.</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">K7 Premier Hybrid 34만원대에!</span>
+                            <br>
+                            <span id="score" class="score">(보험료/세금 포함, 제휴카드 할인가)</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/CarSub2.jpg">
+                </li>
+                
+                <li data-color="#9b59b6">
+                    <div class="sliderInfo3">
+                        <h1 id="sec-tits" class="sec-tits">글로벌 SUV, <br>QM6! 2020 맞이 특가!</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">업그레이드 된 QM6 25만원대부터~</span>
+                            <br>
+                            <span id="score" class="score">(보험료/세금 포함, 제휴카드 할인가)</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/CarSub3.jpg">
+                </li>
+                
+                <li data-color="#34495e">
+                    <div class="sliderInfo2">
+                        <h1 id="sec-tits" class="sec-tits">르노삼성 특별할인 돌입!</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">강렬한 아름다움 SM6 21만원대부터~</span>
+                            <br>
+                            <span id="score" class="score">(보험료/세금 포함, 제휴카드 할인가)</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/CarSub4.jpg">
+                </li>
+                
+                <li data-color="#e74c3c">
+                    <div class="sliderInfo2">
+                        <h1 id="sec-tits" class="sec-tits">올해의 강렬한 볼트대란</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">볼트EV 단 50대만, 19만원대!</span>
+                            <br>
+                            <span id="score" class="score">(보험료/세금 포함, 제휴카드 할인가)</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/CarSub5.jpg">
+                </li>
+                
+                
+            </ul>
+            
+                <!--controls-->
+            <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+            <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+            <div id="counter"></div>
+            
+            <div id="pagination-wrap">
+                <ul>
+                </ul>
+            </div>
+            <!--controls-->  
+                    
+        </div>
+    
+        </div>
+        <button type="button" name="button" class="ac-sub-go-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+    
+    <script src="js/contact.js"></script>
+    <script src="js/Car.js"></script>
+</body>
+</html>

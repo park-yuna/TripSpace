@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg"></div>
+    <header class="header">
+        <nav>
+            <ul class="gnb">
+                <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logoName" src="./img/logo.png" alt="">
+                <img class="logoImg" src="./img/solar-system.png" alt="">
+            </a>
+        </div>
+        <div class="mainMenu">
+            <ul class="mainNav" class="active">
+                <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                  <ul id="Subs1" class="subNav">
+                    <li class="underSub"><a href="./Asia.html">Asia<br><span class="subSpan">아시아</span></a></li>
+                    <li class="underSub"><a href="./America.html">America<br><span class="subSpan">미주(북/남미)</span></a></li>
+                    <li class="underSub"><a href="./Europe.html">Europe<br><span class="subSpan">유럽</span></a></li>
+                    <li class="underSub"><a href="./Oceania.html">Oceania<br><span class="subSpan">대서양</span></a></li>
+                    <li class="underSub"><a href="./Africa.html">Africa etc.<br><span class="subSpan">아프리카</span></a></li>
+                  </ul>
+                </li>
+                <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                  <ul id="Subs2" class="subNav">
+                    <li class="underSub"><a href="./Airline.html">Airline<br><span class="subSpan">항공</span></a></li>
+                    <li class="underSub"><a href="./hotel.html">Hotel<br><span class="subSpan">호텔</span></a></li>
+                    <li class="underSub"><a href="./Car.html">Car Rental<br><span class="subSpan">렌터카</span></a></li>
+                    <li class="underSub"><a href="./Pass.html">Pass/Ticket<br><span class="subSpan">패스 / 입장권</span></a></li>
+                  </ul>
+                </li>
+                <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                <div class="nav-underline"></div>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="move">
+          <div class="p-button normal signin animated pulse">SIGN IN</div>
+        </div>
+        <div class="welcome">
+          <h4 class="bold welcome-text">Welcome Back!</h4>
+          <p class="normal text">To keep connected with us please login with your personal info</p>
+        </div>
+        <div class="hello">
+          <h4 class="bold welcome-text">Hello Friend</h4>
+          <p class="normal text">Enter your personal details and start journey with us</p>
+        </div>
+        <div class="form">
+          <h4 class="bold title">Create Account</h4>
+          <div class="icons">
+            <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="icon"><i class="fab fa-google"></i></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+          </div>
+          <p class="normal light">Or use your email for registration</p>
+          <input type="text" placeholder="Name" class="normal name">
+          <input type="text" placeholder="Email" class="normal">
+          <br/>
+          <input type="password" placeholder="Password" class="normal"><br>
+          <p class="normal forgot">Forgot your password?</p>
+          <button class="b-button normal">SIGN UP</button>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+      </div>
+
+      <script src="js/login.js"></script>
+</body>
+</html>

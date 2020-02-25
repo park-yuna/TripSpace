@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Trip Spsce</title>
+    <link rel="stylesheet" href="css/Europe.css">
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/circletype.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <!-- counter UP -->
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</head>
+<body> <!--onload="InitializeM();" -->
+    <div id="wrap">
+        <div class="slider-wrapper">
+            <div id="arrow-left" class="arrow"><i class="fas fa-chevron-left fa-3x"></i></div>
+            <div class="slider">
+            <div class="slider--item item1 fade">
+                <div class="bg"></div>
+                <header class="header">
+                    <nav>
+                        <ul class="gnb">
+                            <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                            <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                            <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logoName" src="./img/logo.png" alt="">
+                            <img class="logoImg" src="./img/solar-system.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mainMenu">
+                        <ul class="mainNav" class="active">
+                            <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a></li>
+                            <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a></li>
+                            <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                            <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                            <div class="nav-underline"></div>
+                        </ul>
+                    </div>
+                </header>
+                <section class="display-section">
+                    <div class="container">
+                        <p id="sec-sub" class="sec-sub">모든 여행자들의 로망 프랑스 파리!</p>
+                        <h1 id="sec-tit" class="sec-tit">Paris</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">5819</span>
+                            <span class="views">views</span>
+                            <span class="slash"> | </span>
+                            <span id="starForm">
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starR"><i class="fas fa-star-half-alt"></i></span>
+                            </span>
+                            <span id="score" class="score">4.6 / 5</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                </section>
+            </div><!-- /slider--item -->
+            <div class="clear"></div>
+            </div><!-- /slider -->
+            <div id="arrow-right" class="arrow"><i class="fas fa-chevron-right fa-3x"></i></div>
+
+            <div id="cfixed" class=" cfixed">
+                <nav>
+                    <ul class="gnb">
+                        <!-- <li id="closeBtn"><a><i class="fas fa-times fa-4x"></i></a></li> -->
+                        <li id="closeBtn"><a><img class="closed" src="./img/close.png" style="width: 40px;"></a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logoName2" src="./img/logo.png" alt="">
+                        <img class="logoImg2" src="./img/solar-system.png" alt="">
+                    </a>
+                </div>
+                <div class="mainMenu2">
+                    <ul class="mainNav2" class="active">
+                        <li id="under11" class="under1"><a>Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                            <ul class="subNav2">
+                                <li class="underSub2"><a href="./Asia.html">Asia<br><span class="subSpan2">아시아</span></a></li>
+                                <li class="underSub2"><a href="./America.html">America<br><span class="subSpan2">미주(북/남미)</span></a></li>
+                                <li class="underSub2"><a href="./Europe.html">Europe<br><span class="subSpan2">유럽</span></a></li>
+                                <li class="underSub2"><a href="./Oceania.html">Oceania<br><span class="subSpan2">대서양</span></a></li>
+                                <li class="underSub2"><a href="./Africa.html">Africa etc.<br><span class="subSpan2">아프리카</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav" class="under22"><a>Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                            <ul class="subNav3">
+                                <li class="underSub2"><a href="./Airline.html">Airline<br><span class="subSpan2">항공</span></a></li>
+                                <li class="underSub2"><a href="./hotel.html">Hotel<br><span class="subSpan2">호텔</span></a></li>
+                                <li class="underSub2"><a href="./Car.html">Car Rental<br><span class="subSpan2">렌터카</span></a></li>
+                                <li class="underSub2"><a href="./Pass.html">Pass / Ticket<br><span class="subSpan2">패스 / 입장권</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav2" class="under33"><a>Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                        <li class="under55" ><a id="under55" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                    </ul>
+                    <section id="display-section2" class="display-section2">
+                        <div class="container2">
+                            <p id="sec-sub" class="sec-sub">Trip Space에서 추천하는 가봐야할 대한민국</p>
+                            <h1 id="sec-tit" class="sec-tit">Domestic Trip</h1>
+                            <p id="sec-detail" class="sec-detail">대한민국 구석구석을 여행하는<br> 국내테마여행, 국내버스여행, 기차여행, 섬여행, 드라마촬영지 등을<br> 둘러보는 아름다운 대한민국 여행 일번지!</p>
+                        <button class="opacityBtn" onclick="location.href='local.html'">자세히 보기 ></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!-- /slider-wrapper -->
+        <div class="containers">
+
+            <div class="sub_box">
+                <div class="sub_body">
+                    <div class="line_box blank_line_box">
+                        <h1 class="sec-tit Fast line_head">Fast Search</h1>
+                        <div class="line_head line1">
+                            <label><i class="fas fa-map-marker-alt icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">여행도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line2">
+                            <label><i class="fas fa-plane icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">출발도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line3">
+                            <label><i class="fas fa-calendar-alt icon"></i></label>
+                            <input id="datepicker1" type="text" placeholder="출발일자"/>
+                        </div>
+                        <div class="line_head line4">
+                            <input id="ex_chk" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk" class="chck">평일</label>
+
+                            <input id="ex_chk2" type="checkbox" name="color" value="red">
+                            <label for="ex_chk2">주말</label>
+                        </div>
+                        <div class="line_head line5">
+                            <label><i class="fas fa-search icons"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head line6">
+                            <button class="searchBtn">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <section class="blog-section">
+            <div class="container3">
+                <p class="sec-sub">패키지 고객님들께서 가장 많이 예약하신 상품입니다.</p>
+                <h1 class="sec-tit under">Best Tourist</h1>
+                
+                <ul class="blog-list">
+                    <div class="slideBox">
+                    <li>
+                            <div class="upDown">
+                                <div id="slide-right" class="up">
+                                    <i id="rightArrow" class="fas fa-arrow-right fa-2x">
+                                        <div id="rightCircle" class="rightCircle"></div>
+                                    </i>
+                                    
+                                </div>
+                                
+                                <div id="slide-left" class="down">
+                                    <i id="leftArrow" class="fas fa-arrow-left fa-2x">
+                                        <div id="leftCircle" class="leftCircle"></div>
+                                    </i>
+                                </div>
+                            </div>
+                            <!-- <div class="numBox"><h1 class="sec-tit">1</h1></div> -->
+
+                            <div class="numBox" style="text-align:center">
+                                <span id="num1" class="num1">1</span>  
+                                <span id="num3" class="num3">2</span>
+                                <div id="underBar" class="underBar">
+                                    <div id="coverBar" class="coverBar"></div>
+                                </div> 
+                            </div>
+                        </li>
+                    </div>
+                    <div class="tourBox">
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg1" src="img/europeBest1.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle1" class="tourTitle">이탈리아 일주 6~12일</p></a>
+                                <a href="">
+                                    <p id="tourDetail1" class="tourDetail">전문가가 동행하여 조금 더 깊이있는 여행을 할 수 있는 상품입니다.</p>
+                                </a>
+                                <a href="" id="price1" class="price">1,899,900원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg2" src="img/europeBest2.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle2" class="tourTitle">서유럽 3/4/5개국 10일</p></a>
+                                <a href="">
+                                    <p id="tourDetail2" class="tourDetail">서유럽 핵심국가(프랑스,스위스,이탈리아,영국)를 여행하는 알차고 저렴한 가성비 갑!</p>
+                                </a>
+                                <a href="" id="price2" class="price">1,799,900원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg3" src="img/europeBest3.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle3" class="tourTitle">영국 완전일주</p></a>
+                                <a href="">
+                                    <p id="tourDetail3" class="tourDetail">런던 핵심관광을 포함한 영국 일주 상품입니다. 런던과 런던근교 핵심 명소들을 여유있게 돌아보는 일정!</p>
+                                </a>
+                                <a href="" id="price3"class="price">2,199,900원~</a>
+                            </div>
+                        </li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </section>
+        <hr class="horizon">
+        <section class="work-section">
+            <p class="sec-sub">Trip Space 유럽 패키지 상품입니다.</p>
+            <h1 class="sec-tit under">Europe Package Trip</h1>
+            <div id="floatMenu" class="work-donation">
+                <div class="container4">
+                    <p class="Fast2">Fast Search</p>
+                    <hr class="horizon2">
+                    <div class="sub_box2">
+                        
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-map-marker-alt mark"></i>여행도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-plane mark"></i>출발도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>출발일자</label><br>
+                            <input id="datepicker2" type="text" placeholder="yy-mm-dd"/><br>
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>도착일자</label><br>
+                            <input id="datepicker3" type="text" placeholder="yy-mm-dd"/>
+                        </div>
+                        <div class="line_head2">
+                            <input id="ex_chk3" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk3" class="chcks">평일</label>
+
+                            <input id="ex_chk4" type="checkbox" name="color" value="red">
+                            <label for="ex_chk4">주말</label>
+                        </div>
+                        <div class="line_head3" data-min="4" data-max="32">
+                            <div class="length__title field-title" data-length='0'>
+                                <label class="label"><i class="fas fa-dollar-sign mark"></i>가격</label>
+                                <span id="demo" class="demo"></span>
+                            </div>
+                            <input id="sliderBar" class="sliderBar" type="range" min="10" max="1000" value="100"/>
+                            <br><span class="slider_price">10만원</span>
+                            <span class="slider_price2">1000만원</span>
+                        </div>
+                        <div class="line_head2">
+                            <label><i class="fas fa-search"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head2">
+                            <button class="searchBtn2">검색하기</button>
+                        </div>
+                           
+                    </div>
+                </div><!-- /container -->
+            </div>
+            <div class="work-list">
+                <div id="workBox1" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg" src="img/europeSub1.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Finland</p>
+                        <h3 class="workTitle">핀란드 [산타마을 / ICE BREAKER]</h3>
+                        <p class="workDtail">눈의나라 핀란드의 낭만을느끼며 오로라까지 체험 할수 있는 특별한 겨울특집 상품입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 5 ~ 7일</li>
+                            <li class="workList">방문도시 : 루오스토, 로바니에미, 케미, 헬싱키, 탈린</li>
+                            <li class="workList">이용항공 : 핀란드 항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 02월 19일 (수) 11:25</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 02월 24일 (월) 12:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>4,430,900</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox2" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg2" src="img/europeSub2.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Italy</p>
+                        <h3 class="workTitle">이탈리아 [역사와 문화유산의 보고]</h3>
+                        <p class="workDtail">이탈리아의 구석구석의 아름다운 모습들을 경험하고 싶은 분들을 위해 준비한 BEST 상품입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 8일 ~ 9일</li>
+                            <li class="workList">방문도시 : 밀라노, 베니스, 피렌체, 로마, 나폴리 등</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 05월 15일 (금) 15:35</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 05월 23일 (토) 16:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>2,646,800</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox3" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg3" src="img/europeSub3.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Portugal</p>
+                        <h3 class="workTitle">포르투갈 [종교 건축의 잔열속으로]</h3>
+                        <p class="workDtail">해리포터의 촬영지로도 유명세를 탔으며, 해마다 많은 여행자들의 관광지로도<br> 각광받고 있습니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 8 ~ 10일</li>
+                            <li class="workList">방문도시 : 포루투, 리스본, 세비야, 그라나다 등</li>
+                            <li class="workList">이용항공 : 대한항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 02월 25일 (화) 11:15</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 05일 (목) 16:15</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>3,754,600</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="workBtn">
+                    <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                </div>
+            </div>
+            
+
+            <div class="work-list2">
+                <div id="workBox4" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg4" src="img/europeSub4.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Germany</p>
+                        <h3 class="workTitle">독일 [놀라움으로 가득한 그 곳, 독일]</h3>
+                        <p class="workDtail">동화속에 나올법한 아기자기한 소도시들과 독일의 문화와 역사를 엿볼 수 있는<br> 상품입니다. 
+                        </p>
+                        <ul>
+                            <li class="workList">여행기간 : 8 ~ 10일</li>
+                            <li class="workList">방문도시 : 프랑크푸르트, 쾰른, 브레멘, 하노버, 베를린 등</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 12일 (목) 13:20</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 20일 (금) 15:30</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>2,499,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox5" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg5" src="img/europeSub5.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Switzerland</p>
+                        <h3 class="workTitle">스위스 [청정 알프스의 나라 스위스]</h3>
+                        <p class="workDtail">빨간 산악열차를 타면 만날 수 있는 황홀한 알프스와 아름다운 자연이 살아 <br>숨쉬는 동화나라!</p>
+                        <ul>
+                            <li class="workList">여행기간 : 7일 ~ 9일</li>
+                            <li class="workList">방문도시 : 밀라노, 취리히, 인터라켄, 베른 등</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 18일 (수) 13:50</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 26일 (목) 15:05</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>3,819,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox6" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg6" src="img/europeSub6.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">France</p>
+                        <h3 class="workTitle">프랑스 [프랑스 일주 7~10일]</h3>
+                        <p class="workDtail">놀라운 요금에 즐기는 프랑스의 아름다움! 파리뿐 아니라 다양한 프랑스의 <br>명소를 다양하게 관광할 수 있는 상품들이 있습니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 6 ~ 8일</li>
+                            <li class="workList">방문도시 : 파리, 루앙, 옹플뢰르, 몽생미쉘, 투르 등</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 02월 27일 (목) 14:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 05일 (목) 15:55</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>2,809,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button type="button" name="button" class="ac-sub-go-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div><!-- /wrap -->
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+
+    <script src="js/Europe.js"></script>
+</body>     
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Trip Spsce</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/circletype.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+   
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- counter UP -->
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="slider-wrapper">
+            <div id="arrow-left" class="arrow"><i class="fas fa-chevron-left fa-3x"></i></div>
+            <div class="slider">
+            <div class="slider--item item1 fade">
+                <div class="bg"></div>
+                <header class="header cfixed">
+                    <nav>
+                        <ul class="gnb">
+                            <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                            <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                            <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logoName" src="./img/logo.png" alt="">
+                            <img class="logoImg" src="./img/solar-system.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mainMenu">
+                        <ul class="mainNav" class="active">
+                            <li class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                                <ul class="subNav">
+                                    <li class="underSub"><a href="./Asia.html">Asia<br><span class="subSpan">아시아</span></a></li>
+                                    <li class="underSub"><a href="./America.html">America<br><span class="subSpan">미주(북/남미)</span></a></li>
+                                    <li class="underSub"><a href="./Europe.html">Europe<br><span class="subSpan">유럽</span></a></li>
+                                    <li class="underSub"><a href="./Oceania.html">Oceania<br><span class="subSpan">대서양</span></a></li>
+                                    <li class="underSub"><a href="./Africa.html">Africa etc.<br><span class="subSpan">아프리카</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="under2"><a id="under2" >Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                               <ul class="subNav2">
+                                    <li class="underSub"><a href="./Airline.html">Airline<br><span class="subSpan">항공</span></a></li>
+                                    <li class="underSub"><a href="./hotel.html">Hotel<br><span class="subSpan">호텔</span></a></li>
+                                    <li class="underSub"><a href="./Car.html">Car Rental<br><span class="subSpan">렌터카</span></a></li>
+                                    <li class="underSub"><a href="./Pass.html">Pass/Ticket<br><span class="subSpan">패스/입장권</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                            <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                            <div class="nav-underline"></div>
+                        </ul>
+                    </div>
+                </header>
+                <section class="display-section">
+                    <div class="container">
+                        <p id="sec-sub" class="sec-sub">몸과 마음을 리프레시 하는 겨울, 온천 여행</p>
+                        <h1 id="sec-tit" class="sec-tit">Norway Oslo</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">3819</span>
+                            <span class="views">views</span>
+                            <span class="slash"> | </span>
+                            <span id="starForm">
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starR"><i class="fas fa-star-half-alt"></i></span>
+                            </span>
+                            <span id="score" class="score">4.6 / 5</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                </section>
+            </div><!-- /slider--item -->
+
+            <div class="clear"></div>
+            
+            </div><!-- /slider -->
+            <div id="arrow-right" class="arrow"><i class="fas fa-chevron-right fa-3x"></i></div>
+        </div><!-- /slider-wrapper -->
+        <div class="containers">
+
+            <div class="sub_box">
+                <div class="sub_body">
+                    <div class="line_box blank_line_box">
+                        <div class="line_head line1">
+                            <label><i class="fas fa-map-marker-alt icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">여행도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line2">
+                            <label><i class="fas fa-plane icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">출발도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line3">
+                            <label><i class="fas fa-calendar-alt icon"></i></label>
+                            <input id="datepicker1" class="datedropper_single" type="text" placeholder="출발일자"/>
+                        </div>
+                        <div class="line_head line4">
+                            <input id="ex_chk" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk" class="chck">평일</label>
+
+                            <input id="ex_chk2" type="checkbox" name="color" value="red">
+                            <label for="ex_chk2">주말</label>
+                        </div>
+                        <div class="line_head line5">
+                            <label><i class="fas fa-search icon"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head line6">
+                            <button class="searchBtn">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <section class="blog-section">
+            <div class="container2">
+                <p class="sec-sub">패키지 고객님들께서 가장 많이 예약하신 상품입니다.</p>
+                <h1 class="sec-tit under">Best Tourist</h1>
+                
+                <ul class="blog-list">
+                    <div class="slideBox">
+                    <li>
+                            <div class="upDown">
+                                <div id="slide-right" class="up">
+                                    <i id="rightArrow" class="fas fa-arrow-right fa-2x">
+                                        <div id="rightCircle" class="rightCircle"></div>
+                                    </i>
+                                    
+                                </div>
+                                
+                                <div id="slide-left" class="down">
+                                    <i id="leftArrow" class="fas fa-arrow-left fa-2x">
+                                        <div id="leftCircle" class="leftCircle"></div>
+                                    </i>
+                                </div>
+                            </div>
+                            <!-- <div class="numBox"><h1 class="sec-tit">1</h1></div> -->
+
+                            <div class="numBox" style="text-align:center">
+                                <span id="num1" class="num1">1</span>  
+                                <span id="num3" class="num3">2</span>
+                                <div id="underBar" class="underBar">
+                                    <div id="coverBar" class="coverBar"></div>
+                                </div> 
+                            </div>
+                        </li>
+                    </div>
+                    <div class="tourBox">
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg1" src="img/blog4.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle1" class="tourTitle">미서부 4대 캐년 8~10일</p></a>
+                                <a href="">
+                                    <p id="tourDetail1" class="tourDetail">미서부에서 가장 오랫동안 사랑 받아온 부동의 인기 NO.1 미서부 대표 베스트셀러 상품입니다.</p>
+                                </a>
+                                <a href="" id="price1" class="price"><countUp>1,750,300</countUp>원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg2" src="img/blog5.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle2" class="tourTitle">이탈리아 일주 6~12일</p></a>
+                                <a href="">
+                                    <p id="tourDetail2" class="tourDetail">여유롭게 한나라만 즐길수 있는 이태리 완전일주 상품입니다. 깊이있는 여행을 즐기세요.</p>
+                                </a>
+                                <a href="" id="price2" class="price"><countUp>1,989,900</countUp>원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg3" src="img/blog6.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle3" class="tourTitle">스페인/포르투갈 8~10일</p></a>
+                                <a href="">
+                                    <p id="tourDetail3" class="tourDetail">지중해베스트셀러! 스페인 남부 전 지역부터 유럽 최서단 포르투갈을 알차게 관광하는 상품입니다.</p>
+                                </a>
+                                <a href="" id="price3"class="price"><countUp>1,699,900</countUp>원~</a>
+                            </div>
+                        </li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </section>
+        <hr class="horizon">
+
+        <section class="map-section">
+            <p class="sec-sub">지도에서 Trip Space의 여행지를 선택해보세요.</p>
+            <h1 class="sec-tit under">Trip Map</h1>
+            <div class="container4">
+                <div id="chartdiv"></div>
+            </div>
+        </section>
+
+        <hr class="horizon">
+        <section class="contact-section">
+            <div class="container3">
+                <p class="sec-sub">더 많은 Trip Space의 소식을 받아보세요.</p>
+                <h1 class="sec-tit">Newsletter</h1>
+                <div class="form-box">
+                    <form action="" method="">
+                        <fieldset class="cfixed2">
+                            <div class="form">
+                                <label for="name" class="blind"><i class="far fa-smile"></i></label>
+                                <input type="text" id="name" placeholder="Name">
+                                <label for="phone" class="blind"><i class="fas fa-phone-alt"></i></label>
+                                <input type="tel" id="phone" placeholder="Phone">
+                                <br>
+                                <label for="email" class="blind"><i class="far fa-envelope-open"></i></label>
+                                <input type="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div class="send-btn">
+                                <button>SEND</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <button type="button" name="button" class="ac-sub-go-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    </div><!-- /wrap -->
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

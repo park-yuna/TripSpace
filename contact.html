@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg"></div>
+    <header class="header">
+        <nav>
+            <ul class="gnb">
+                <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logoName" src="./img/logo.png" alt="">
+                <img class="logoImg" src="./img/solar-system.png" alt="">
+            </a>
+        </div>
+        <div class="mainMenu">
+            <ul class="mainNav" class="active">
+                <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                  <ul id="Subs1" class="subNav">
+                    <li class="underSub"><a href="./Asia.html">Asia<br><span class="subSpan">아시아</span></a></li>
+                    <li class="underSub"><a href="./America.html">America<br><span class="subSpan">미주(북/남미)</span></a></li>
+                    <li class="underSub"><a href="./Europe.html">Europe<br><span class="subSpan">유럽</span></a></li>
+                    <li class="underSub"><a href="./Oceania.html">Oceania<br><span class="subSpan">대서양</span></a></li>
+                    <li class="underSub"><a href="./Africa.html">Africa etc.<br><span class="subSpan">아프리카</span></a></li>
+                  </ul>
+                </li>
+                <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                  <ul id="Subs2" class="subNav">
+                    <li class="underSub"><a href="./Airline.html">Airline<br><span class="subSpan">항공</span></a></li>
+                    <li class="underSub"><a href="./hotel.html">Hotel<br><span class="subSpan">호텔</span></a></li>
+                    <li class="underSub"><a href="./Car.html">Car Rental<br><span class="subSpan">렌터카</span></a></li>
+                    <li class="underSub"><a href="./Pass.html">Pass/Ticket<br><span class="subSpan">패스 / 입장권</span></a></li>
+                  </ul>
+                </li>
+                <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                <div class="nav-underline"></div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="clear"></div>
+
+    <div class="container">
+        <p class="sec-sub">Trip Space Information / Q&A</p>
+        <h1 class="sec-tit under">Contact us</h1>
+        <div id="map" class="map">
+            <a href="https://map.kakao.com/?urlX=393332&urlY=1109247&urlLevel=8&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
+                <img width="430" height="360" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=80&MX=393332&MY=1109247&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc">
+            </a>
+            <div class="mapInfo">
+                <div class="cover">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="mapDetail address">
+                        인천 중구 공항로 271 인천국제공항역<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        운서동 2851 (우)22382<br>
+                    </span>
+                </div>
+                <div class="cover">
+                    <i class="far fa-clock"></i>
+                    <span class="mapDetail time">
+                        Mon - Fri : 09:00am ~ 13:00pm<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                        14:00pm ~ 18:00pm<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sat : 10:00am ~ 13:00pm<br>
+                    </span>
+                </div>
+                <div class="cover">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="mapDetail call">
+                        1577-1577<br>
+                    </span>
+                </div>
+                <div class="cover">
+                    <i class="far fa-envelope-open"></i>
+                    <span class="mapDetail email">
+                        trip-space@tripspace.com
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="customer">
+            <div class="name">
+                <span class="cusInfo fullName">Full Name</span><br>
+                <input type="text" placeholder=""/>
+            </div>
+            <div class="customerMail">
+                <span class="cusInfo fullMail">Your E-mail</span><br>
+                <input type="text" placeholder=""/>
+            </div>
+            <div class="customerCall">
+                <span class="cusInfo fullCall">Your Phone</span><br>
+                <input type="text" placeholder=""/>
+            </div>
+            <div class="line_head line4">
+                <span class="cusInfo fullchk">We will send message to you.</span><br>
+                <input id="ex_chk" type="checkbox" name="color" value="blue">
+                <label for="ex_chk" class="chck">Email</label>
+
+                <input id="ex_chk2" type="checkbox" name="color" value="red">
+                <label for="ex_chk2" class="chck">Phone</label>
+            </div>
+            <div class="customerTxt">
+                <span class="cusInfo fullTxt">Your Message</span><br>
+                <textarea name="" id="fullMsg" cols="70" rows="12"></textarea>
+            </div>
+            
+            <button class="b-button normal">Send</button>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+    
+    <script src="js/contact.js"></script>
+</body>
+</html>

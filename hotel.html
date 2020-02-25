@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hotel.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+</head>
+<body>
+    <div class="bg2"></div>
+    <header class="header">
+        <nav>
+            <ul class="gnb">
+                <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logoName" src="./img/logo.png" alt="">
+                <img class="logoImg" src="./img/solar-system.png" alt="">
+            </a>
+        </div>
+        <div class="mainMenu">
+            <ul class="mainNav" class="active">
+                <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                  <ul id="Subs1" class="subNav">
+                    <li class="underSub"><a href="./Asia.html">Asia<br><span class="subSpan">아시아</span></a></li>
+                    <li class="underSub"><a href="./America.html">America<br><span class="subSpan">미주(북/남미)</span></a></li>
+                    <li class="underSub"><a href="./Europe.html">Europe<br><span class="subSpan">유럽</span></a></li>
+                    <li class="underSub"><a href="./Oceania.html">Oceania<br><span class="subSpan">대서양</span></a></li>
+                    <li class="underSub"><a href="./Africa.html">Africa etc.<br><span class="subSpan">아프리카</span></a></li>
+                  </ul>
+                </li>
+                <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                  <ul id="Subs2" class="subNav">
+                    <li class="underSub"><a href="./Airline.html">Airline<br><span class="subSpan">항공</span></a></li>
+                    <li class="underSub"><a href="./hotel.html">Hotel<br><span class="subSpan">호텔</span></a></li>
+                    <li class="underSub"><a href="./Car.html">Car Rental<br><span class="subSpan">렌터카</span></a></li>
+                    <li class="underSub"><a href="./Pass.html">Pass/Ticket<br><span class="subSpan">패스 / 입장권</span></a></li>
+                  </ul>
+                </li>
+                <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                <div class="nav-underline"></div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="clear"></div>
+
+    <div class="container2">
+        <img class="passport" src="./img/stamp.png">
+        <p class="sec-sub2">호텔 예약 및 조회</p>
+        <h1 class="sec-tit2">Hotel Search</h1>
+        <hr class="horizon">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>목적지 설정</p>
+            <div class="ticketChk">
+
+                <input id="ex_chk6" class="tic" type="radio" name="color" value="red" checked>
+                <label for="ex_chk6" id="ex_chk66">일반</label>
+
+                <input id="ex_chk7" class="tic" type="radio" name="color" value="red">
+                <label for="ex_chk7" id="ex_chk77">다구간 여정</label>
+            </div>
+            <div id="ticketBox2" class="ticketBox">
+                <div class="line_head line1">
+                    <select class="select_option">
+                        <option value="1">여행도시</option>
+                        <option value="2">서울(인천/김포)</option>
+                        <option value="3">부산</option>
+                        <option value="4">대구</option>
+                        <option value="5">청주</option>
+                        <option value="6">광주(무안)</option>
+                        <option value="7">제주</option>
+                        <option value="8">강원(양양)</option>
+                    </select>
+                    <label><i class="fas fa-map-marker-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker1" type="text" placeholder="체크인"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker2" type="text" placeholder="체크아웃"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+            </div>
+            <div id="ticketBox3" class="ticketBox">
+                <div class="line_head line1">
+                    <select class="select_option">
+                        <option value="1">여행도시</option>
+                        <option value="2">서울(인천/김포)</option>
+                        <option value="3">부산</option>
+                        <option value="4">대구</option>
+                        <option value="5">청주</option>
+                        <option value="6">광주(무안)</option>
+                        <option value="7">제주</option>
+                        <option value="8">강원(양양)</option>
+                    </select>
+                    <label><i class="fas fa-map-marker-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker3" type="text" placeholder="체크인"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker4" type="text" placeholder="체크아웃"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+            </div>
+            <div id="ticketBox4" class="ticketBox">
+                <div class="line_head line1">
+                    <select class="select_option">
+                        <option value="1">여행도시</option>
+                        <option value="2">서울(인천/김포)</option>
+                        <option value="3">부산</option>
+                        <option value="4">대구</option>
+                        <option value="5">청주</option>
+                        <option value="6">광주(무안)</option>
+                        <option value="7">제주</option>
+                        <option value="8">강원(양양)</option>
+                    </select>
+                    <label><i class="fas fa-map-marker-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker5" type="text" placeholder="체크인"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+                <div class="line_head line3">
+                    <input id="datepicker6" type="text" placeholder="체크아웃"/>
+                    <label><i class="fas fa-calendar-alt icon"></i></label>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="horizon2">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>인원 설정</p>
+            <div class="ticketBox">
+                <div class="ticPeople">
+                    <form>
+                        <span class="old">성인</span>
+                        <!-- <input type=button value="-" class="ticNum" onClick="javascript:if(this.form.amount.value == 0){return;}this.form.amount.value--;"> -->
+                        <input type=button value="-" class="ticNum" onClick="countUpDown(this.form.amount, 'minus', 0)">
+                        
+                        <input type=text name=amount value=1 class="amountBox" readonly>
+                        <input type=button value="+" class="ticNum" onClick="countUpDown(this.form.amount, 'plus', 10)">
+                        <!-- <input type=button value="+" class="ticNum" onClick="javascript:this.form.amount.value++;"> -->
+                    </form>
+                </div>
+                <div class="ticPeople">
+                    <form>
+                        <span class="old">소아(만2-11세)</span>
+                        <input type=button value="-" class="ticNum" onClick="countUpDown(this.form.amount, 'minus', 0)">
+                        <input type=text name=amount value=0 class="amountBox" readonly>
+                        <input type=button value="+" class="ticNum" onClick="countUpDown(this.form.amount, 'plus', 10)">
+                    </form>
+                </div>
+                <div class="ticPeople">
+                    <form>
+                        <span class="old">유아(만2세 미만)</span>
+                        <input type=button value="-" class="ticNum" onClick="countUpDown(this.form.amount, 'minus', 0)">
+                        <input type=text name=amount value=0 class="amountBox" readonly>
+                        <input type=button value="+" class="ticNum" onClick="countUpDown(this.form.amount, 'plus', 10)">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="horizon2">
+        <div class="Ticketing-Section">
+            <p class="under"><i class="fas fa-thumbtack"></i>숙소 유형</p>
+            <div class="ticketChk">
+                <input id="ex_chk3" type="radio" name="color2" value="blue">
+                <label for="ex_chk3" >전체</label>
+
+                <input id="ex_chk4" type="radio" name="color2" value="red">
+                <label for="ex_chk4">호텔</label>
+
+                <input id="ex_chk5" type="radio" name="color2" value="red">
+                <label for="ex_chk5">리조트</label>
+
+                <input id="ex_chk8" type="radio" name="color2" value="red">
+                <label for="ex_chk8">펜션</label>
+
+                <input id="ex_chk9" type="radio" name="color2" value="red">
+                <label for="ex_chk9">레지던스</label>
+
+                <input id="ex_chk10" type="radio" name="color2" value="red">
+                <label for="ex_chk10">캠핑카</label>
+            </div>
+        </div>
+        <hr class="horizon2">
+        <button class="b-button2">Search</button>
+        <div class="dott"></div>
+        <div class="dott"></div>
+        <div class="dott3"></div>
+        <div class="dott3"></div>
+        
+    </div>
+    
+
+    <div id="wrapper">
+        <div class="bar"></div>
+        <div class="bar2"></div>
+        <div class="dott2"></div>
+        <div class="dott2"></div>
+
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="dott4"></div>
+        <div class="dott4"></div>
+
+        <div class="name-Section">
+            <p class="sec-sub2">지금 인기 BEST 상품을 만나보세요.</p>
+            <h3 class="sec-tit2">BEST HOTEL</h3>
+            <hr class="horizon3">
+        </div>
+        
+        <div id="slider-wrap">
+            <ul id="slider">
+                <li data-color="#1abc9c">
+                    <div class="sliderInfo2">
+                        <h1 id="sec-tits" class="sec-tits">M스테이 146 스튜디오스</h1>
+                        <div class="starRev">
+                            <span class="views">KRW</span>
+                            <span id="viewsN" class="viewsN">83,736 ~</span>
+                            <span class="slash"> | </span>
+                            <span id="score" class="score"><span class="review">4.9</span> 매우좋음</span>
+                            <span class="starRon">º 1,445개 이용 후기</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>                
+                    <img src="./img/hotelSlider1.jpg">
+                </li>
+                
+                <li data-color="#3498db">
+                    <div class="sliderInfo">
+                        <h1 id="sec-tits" class="sec-tits">아파트호텔 스테어 미아스토</h1>
+                        <div class="starRev">
+                            <span class="views">KRW</span>
+                            <span id="viewsN" class="viewsN">57,838 ~</span>
+                            <span class="slash"> | </span>
+                            <span id="score" class="score"><span class="review">5.0</span> 최고</span>
+                            <span class="starRon">º 3,598개 이용 후기</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/hotelSlider2.jpg">
+                </li>
+                
+                <li data-color="#9b59b6">
+                    <div class="sliderInfo3">
+                        <h1 id="sec-tits" class="sec-tits">Grand Apartment Danube 5bdr</h1>
+                        <div class="starRev">
+                            <span class="views">KRW</span>
+                            <span id="viewsN" class="viewsN">360,439 ~</span>
+                            <span class="slash"> | </span>
+                            <span id="score" class="score"><span class="review">4.5</span> 우수함</span>
+                            <span class="starRon">º 81개 이용 후기</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div> 
+                    <img src="./img/hotelSlider3.jpg">
+                </li>
+                
+                <li data-color="#34495e">
+                    <div class="sliderInfo3">
+                        <h1 id="sec-tits" class="sec-tits">Junqueira Charming Aparment </h1>
+                        <div class="starRev">
+                            <span class="views">KRW</span>
+                            <span id="viewsN" class="viewsN">502,040 ~</span>
+                            <span class="slash"> | </span>
+                            <span id="score" class="score"><span class="review">5.0</span> 최고</span>
+                            <span class="starRon">º 63개 이용 후기</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                    <img src="./img/hotelSlider4.jpg">
+                </li>
+                
+                <li data-color="#e74c3c">
+                    <div class="sliderInfo">
+                        <h1 id="sec-tits" class="sec-tits">M7 컨템포러리 아파트먼트</h1>
+                        <div class="starRev">
+                            <span class="views">KRW</span>
+                            <span id="viewsN" class="viewsN">114,568 ~</span>
+                            <span class="slash"> | </span>
+                            <span id="score" class="score"><span class="review">4.9</span> 매우 좋음</span>
+                            <span class="starRon">º 338개 이용 후기</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                    <img src="./img/hotelSlider5.jpg">
+                </li>
+                
+                
+            </ul>
+            
+                <!--controls-->
+            <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+            <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+            <div id="counter"></div>
+            
+            <div id="pagination-wrap">
+                <ul>
+                </ul>
+            </div>
+            <!--controls-->  
+                    
+        </div>
+    
+        </div>
+        <button type="button" name="button" class="ac-sub-go-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+    
+    <script src="js/contact.js"></script>
+    <script src="js/Hotel.js"></script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Trip Spsce</title>
+    <link rel="stylesheet" href="./css/Africa.css">
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/circletype.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <!-- counter UP -->
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+</head>
+<body> <!--onload="InitializeM();" -->
+    <div id="wrap">
+        <div class="slider-wrapper">
+            <div id="arrow-left" class="arrow"><i class="fas fa-chevron-left fa-3x"></i></div>
+            <div class="slider">
+            <div class="slider--item item1 fade">
+                <div class="bg"></div>
+                <header class="header">
+                    <nav>
+                        <ul class="gnb">
+                            <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                            <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                            <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logoName" src="./img/logo.png" alt="">
+                            <img class="logoImg" src="./img/solar-system.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mainMenu">
+                        <ul class="mainNav" class="active">
+                            <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a></li>
+                            <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a></li>
+                            <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                            <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                            <div class="nav-underline"></div>
+                        </ul>
+                    </div>
+                </header>
+                <section class="display-section">
+                    <div class="container">
+                        <p id="sec-sub" class="sec-sub">희망의 땅에서 오감을 충족하다!</p>
+                        <h1 id="sec-tit" class="sec-tit">South Africa</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">5819</span>
+                            <span class="views">views</span>
+                            <span class="slash"> | </span>
+                            <span id="starForm">
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starR"><i class="fas fa-star-half-alt"></i></span>
+                            </span>
+                            <span id="score" class="score">4.6 / 5</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                </section>
+            </div><!-- /slider--item -->
+            <div class="clear"></div>
+            </div><!-- /slider -->
+            <div id="arrow-right" class="arrow"><i class="fas fa-chevron-right fa-3x"></i></div>
+
+            <div id="cfixed" class=" cfixed">
+                <nav>
+                    <ul class="gnb">
+                        <!-- <li id="closeBtn"><a><i class="fas fa-times fa-4x"></i></a></li> -->
+                        <li id="closeBtn"><a><img class="closed" src="./img/close.png" style="width: 40px;"></a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logoName2" src="./img/logo.png" alt="">
+                        <img class="logoImg2" src="./img/solar-system.png" alt="">
+                    </a>
+                </div>
+                <div class="mainMenu2">
+                    <ul class="mainNav2" class="active">
+                        <li id="under11" class="under1"><a>Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                            <ul class="subNav2">
+                                <li class="underSub2"><a href="./Asia.html">Asia<br><span class="subSpan2">아시아</span></a></li>
+                                <li class="underSub2"><a href="./America.html">America<br><span class="subSpan2">미주(북/남미)</span></a></li>
+                                <li class="underSub2"><a href="./Europe.html">Europe<br><span class="subSpan2">유럽</span></a></li>
+                                <li class="underSub2"><a href="./Oceania.html">Oceania<br><span class="subSpan2">대서양</span></a></li>
+                                <li class="underSub2"><a href="./Africa.html">Africa etc.<br><span class="subSpan2">아프리카</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav" class="under22"><a>Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                            <ul class="subNav3">
+                                <li class="underSub2"><a href="./Airline.html">Airline<br><span class="subSpan2">항공</span></a></li>
+                                <li class="underSub2"><a href="./hotel.html">Hotel<br><span class="subSpan2">호텔</span></a></li>
+                                <li class="underSub2"><a href="./Car.html">Car Rental<br><span class="subSpan2">렌터카</span></a></li>
+                                <li class="underSub2"><a href="./Pass.html">Pass / Ticket<br><span class="subSpan2">패스 / 입장권</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav2" class="under33"><a>Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                        <li class="under55" ><a id="under55" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                    </ul>
+                    <section id="display-section2" class="display-section2">
+                        <div class="container2">
+                            <p id="sec-sub" class="sec-sub">Trip Space에서 추천하는 가봐야할 대한민국</p>
+                            <h1 id="sec-tit" class="sec-tit">Domestic Trip</h1>
+                            <p id="sec-detail" class="sec-detail">대한민국 구석구석을 여행하는<br> 국내테마여행, 국내버스여행, 기차여행, 섬여행, 드라마촬영지 등을<br> 둘러보는 아름다운 대한민국 여행 일번지!</p>
+                        <button class="opacityBtn" onclick="location.href='local.html'">자세히 보기 ></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!-- /slider-wrapper -->
+        <div class="containers">
+
+            <div class="sub_box">
+                <div class="sub_body">
+                    <div class="line_box blank_line_box">
+                        <h1 class="sec-tit Fast line_head">Fast Search</h1>
+                        <div class="line_head line1">
+                            <label><i class="fas fa-map-marker-alt icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">여행도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line2">
+                            <label><i class="fas fa-plane icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">출발도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line3">
+                            <label><i class="fas fa-calendar-alt icon"></i></label>
+                            <input id="datepicker1" type="text" placeholder="출발일자"/>
+                        </div>
+                        <div class="line_head line4">
+                            <input id="ex_chk" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk" class="chck">평일</label>
+
+                            <input id="ex_chk2" type="checkbox" name="color" value="red">
+                            <label for="ex_chk2">주말</label>
+                        </div>
+                        <div class="line_head line5">
+                            <label><i class="fas fa-search icons"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head line6">
+                            <button class="searchBtn">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <section class="blog-section">
+            <div class="container3">
+                <p class="sec-sub">패키지 고객님들께서 가장 많이 예약하신 상품입니다.</p>
+                <h1 class="sec-tit under">Best Tourist</h1>
+                
+                <ul class="blog-list">
+                    <div class="slideBox">
+                    <li>
+                            <div class="upDown">
+                                <div id="slide-right" class="up">
+                                    <i id="rightArrow" class="fas fa-arrow-right fa-2x">
+                                        <div id="rightCircle" class="rightCircle"></div>
+                                    </i>
+                                    
+                                </div>
+                                
+                                <div id="slide-left" class="down">
+                                    <i id="leftArrow" class="fas fa-arrow-left fa-2x">
+                                        <div id="leftCircle" class="leftCircle"></div>
+                                    </i>
+                                </div>
+                            </div>
+                            <!-- <div class="numBox"><h1 class="sec-tit">1</h1></div> -->
+
+                            <div class="numBox" style="text-align:center">
+                                <span id="num1" class="num1">1</span>  
+                                <span id="num3" class="num3">2</span>
+                                <div id="underBar" class="underBar">
+                                    <div id="coverBar" class="coverBar"></div>
+                                </div> 
+                            </div>
+                        </li>
+                    </div>
+                    <div class="tourBox">
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg1" src="img/africaBest1.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle1" class="tourTitle">케이프타운 6일</p></a>
+                                <a href="">
+                                    <p id="tourDetail1" class="tourDetail">아프리카에서 만나는 유럽의 정취! 도시와 자연이 공존하는 매력적인 곳!</p>
+                                </a>
+                                <a href="" id="price1" class="price">5,729,900원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg2" src="img/africaBest2.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle2" class="tourTitle">아프리카 4개국 8일</p></a>
+                                <a href="">
+                                    <p id="tourDetail2" class="tourDetail">차별화된 일정으로 남아공,빅토리아폭포,보츠와나 사파리를 관광합니다.</p>
+                                </a>
+                                <a href="" id="price2" class="price">4,901,900원~</a>
+                            </div>
+                        </li>
+                        <li class="tripBox">
+                            <a href=""><img id="bestImg3" src="img/africaBest3.jpg" alt=""></a>
+                            <div class="txtBox">
+                                <a href=""><p id="tourTitle3" class="tourTitle">북인도여행 9일</p></a>
+                                <a href="">
+                                    <p id="tourDetail3" class="tourDetail">인도중북부와 갠지스강의 바라나시를 방문하는 여행일정입니다.</p>
+                                </a>
+                                <a href="" id="price3"class="price">6,983,400원~</a>
+                            </div>
+                        </li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </section>
+        <hr class="horizon">
+        <section class="work-section">
+            <p class="sec-sub">Trip Space 아프리카 및 기타지역 패키지 상품입니다.</p>
+            <h1 class="sec-tit under">Africa / etc. Package Trip</h1>
+            <div id="floatMenu" class="work-donation">
+                <div class="container4">
+                    <p class="Fast2">Fast Search</p>
+                    <hr class="horizon2">
+                    <div class="sub_box2">
+                        
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-map-marker-alt mark"></i>여행도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-plane mark"></i>출발도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>출발일자</label><br>
+                            <input id="datepicker2" type="text" placeholder="yy-mm-dd"/><br>
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>도착일자</label><br>
+                            <input id="datepicker3" type="text" placeholder="yy-mm-dd"/>
+                        </div>
+                        <div class="line_head2">
+                            <input id="ex_chk3" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk3" class="chcks">평일</label>
+
+                            <input id="ex_chk4" type="checkbox" name="color" value="red">
+                            <label for="ex_chk4">주말</label>
+                        </div>
+                        <div class="line_head3" data-min="4" data-max="32">
+                            <div class="length__title field-title" data-length='0'>
+                                <label class="label"><i class="fas fa-dollar-sign mark"></i>가격</label>
+                                <span id="demo" class="demo"></span>
+                            </div>
+                            <input id="sliderBar" class="sliderBar" type="range" min="10" max="1000" value="100"/>
+                            <br><span class="slider_price">10만원</span>
+                            <span class="slider_price2">1000만원</span>
+                        </div>
+                        <div class="line_head2">
+                            <label><i class="fas fa-search"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head2">
+                            <button class="searchBtn2">검색하기</button>
+                        </div>
+                           
+                    </div>
+                </div><!-- /container -->
+            </div>
+            <div class="work-list">
+                <div id="workBox1" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg" src="img/africaSub1.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Africa</p>
+                        <h3 class="workTitle">탄자니아 [세렝게티 사파리+잔지바르]</h3>
+                        <p class="workDtail">아프리카 최고의 사파리 세렝게티와 휴양 낙원 잔지바르를 방문합니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 6 ~ 8일</li>
+                            <li class="workList">방문도시 : 아루샤, 세렝게티, 잔지바르</li>
+                            <li class="workList">이용항공 : 에디오피아 항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 02일 (월) 00:20</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 09일 (월) 15:45</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>4,800,900</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox2" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg2" src="img/africaSub2.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">India</p>
+                        <h3 class="workTitle">인도 [갠지스강/타지마할]</h3>
+                        <p class="workDtail">세계 7대불가사의라 선정된 타지마할과 델리를 연결하는 핵심 관광일정입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 4 ~ 6일</li>
+                            <li class="workList">방문도시 : 바라나시, 뉴델리, 아그라</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 05월 15일 (금) 13:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 05월 20일 (수) 06:20</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>3,646,800</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox3" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg3" src="img/africaSub3.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Africa</p>
+                        <h3 class="workTitle">아프리카 [리얼 아프리카 4개국 8일]</h3>
+                        <p class="workDtail">동부 아프리카의 리얼 사파리, 세계 최고의 빅토리아폭포, 아프리카속 유럽<br> 케이프타운을 한번에 돌아봅니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 12 ~ 13일</li>
+                            <li class="workList">방문도시 : 탄자니아, 보츠와나, 남아프리카 공화국, 잠비아, 케냐 등</li>
+                            <li class="workList">이용항공 : 남아프리카항공, 에미레이트항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 05월 12일 (화) 15:05</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 05월 24일 (일) 21:15</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>4,754,600</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="workBtn">
+                    <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                </div>
+            </div>
+            
+
+            <div class="work-list2">
+                <div id="workBox4" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg4" src="img/africaSub4.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">India</p>
+                        <h3 class="workTitle">인도 [골든트라이앵글 6일]</h3>
+                        <p class="workDtail">델리, 아그라, 자이푸르 골든트라이앵글 핵심 관광지를 방문하는 북인도 6일<br> 일정입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 4 ~ 6일</li>
+                            <li class="workList">방문도시 : 뉴델리, 자이푸르, 아그라</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 05월 12일 (화) 13:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 05월 17일 (일) 06:20</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>9,499,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox5" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg5" src="img/africaSub5.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Israel</p>
+                        <h3 class="workTitle">이스라엘 [찬양 사역자와 함께하는 이스라엘]</h3>
+                        <p class="workDtail">단기 선교사로서 성지를 방문한다는 마음과 자세로 떠나는 성지순례여행!</p>
+                        <ul>
+                            <li class="workList">여행기간 : 7 ~ 9일</li>
+                            <li class="workList">방문도시 : 베들레헴, 지중해변, 나사렛, 갈릴리, 갈릴리북부 등</li>
+                            <li class="workList">이용항공 : 폴란드 항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 18일 (수) 13:50</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 26일 (목) 15:05</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>3,819,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox6" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg6" src="img/africaSub6.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Sri Lanka</p>
+                        <h3 class="workTitle">스리랑카 [문화탐방/마두강 보트 사파리]</h3>
+                        <p class="workDtail">미지의 섬나라! 나만 알고 싶은 여행지! 스리랑카 상품입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 4 ~ 6일</li>
+                            <li class="workList">방문도시 : 담불라, 시기리야, 마탈레, 캔디, 갈레, 콜롬보</li>
+                            <li class="workList">이용항공 : 대한항공, 아시아나항공</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 04월 15일 (수) 23:30</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 04월 20일 (월) 06:25</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>3,809,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button type="button" name="button" class="ac-sub-go-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div><!-- /wrap -->
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>
+
+    <script src="js/Africa.js"></script>
+</body>     
+</html>

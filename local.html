@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Trip Spsce</title>
+    <link rel="stylesheet" href="css/local.css">
+
+    <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <!-- counter UP -->
+    <script src="js/jquery.countup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</head>
+<body onload="renderDate()">
+    <div id="wrap">
+        <div class="slider-wrapper">
+            <div id="arrow-left" class="arrow"><i class="fas fa-chevron-left fa-3x"></i></div>
+            <div class="slider">
+            <div class="slider--item item1 fade">
+                <div class="bg"></div>
+                <header class="header">
+                    <nav>
+                        <ul class="gnb">
+                            <li><a class="blight1" href="./login.html"><i class="fas fa-power-off"></i>Login</a></li>
+                            <li class="blight2"><a href="./login.html"><i class="fas fa-user-circle"></i>Sign up</a></li>
+                            <li class="blight3"><a href="./contact.html"><i class="fas fa-comments"></i>Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logoName" src="./img/logo.png" alt="">
+                            <img class="logoImg" src="./img/solar-system.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mainMenu">
+                        <ul class="mainNav" class="active">
+                            <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a></li>
+                            <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a></li>
+                            <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                            <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                            <div class="nav-underline"></div>
+                        </ul>
+                    </div>
+                </header>
+                <section class="display-section">
+                    <div class="container">
+                        <p id="sec-sub" class="sec-sub">혼저옵서예~</p>
+                        <h1 id="sec-tit" class="sec-tit">Jeju</h1>
+                        <div class="starRev">
+                            <span id="viewsN" class="viewsN">5819</span>
+                            <span class="views">views</span>
+                            <span class="slash"> | </span>
+                            <span id="starForm">
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starRon"><i class="fas fa-star"></i></span>
+                            <span class="starR"><i class="fas fa-star-half-alt"></i></span>
+                            </span>
+                            <span id="score" class="score">4.6 / 5</span>
+                        </div>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                    </div>
+                </section>
+            </div><!-- /slider--item -->
+            <div class="clear"></div>
+            </div><!-- /slider -->
+            <div id="arrow-right" class="arrow"><i class="fas fa-chevron-right fa-3x"></i></div>
+
+            <div id="cfixed" class=" cfixed">
+                <nav>
+                    <ul class="gnb">
+                        <li id="closeBtn"><a><img class="closed" src="./img/close.png" style="width: 40px;"></a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logoName2" src="./img/logo.png" alt="">
+                        <img class="logoImg2" src="./img/solar-system.png" alt="">
+                    </a>
+                </div>
+                <div class="mainMenu2">
+                    <ul class="mainNav2" class="active">
+                        <li id="under11" class="under1"><a>Package Trip<br><span class="mainSpan">패키지 여행</span></a>
+                            <ul class="subNav2">
+                                <li class="underSub2"><a href="./Asia.html">Asia<br><span class="subSpan2">아시아</span></a></li>
+                                <li class="underSub2"><a href="./America.html">America<br><span class="subSpan2">미주(북/남미)</span></a></li>
+                                <li class="underSub2"><a href="./Europe.html">Europe<br><span class="subSpan2">유럽</span></a></li>
+                                <li class="underSub2"><a href="./Oceania.html">Oceania<br><span class="subSpan2">대서양</span></a></li>
+                                <li class="underSub2"><a href="./Africa.html">Africa etc.<br><span class="subSpan2">아프리카</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav" class="under22"><a>Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a id="under2">
+                            <ul class="subNav3">
+                                <li class="underSub2"><a href="./Airline.html">Airline<br><span class="subSpan2">항공</span></a></li>
+                                <li class="underSub2"><a href="./hotel.html">Hotel<br><span class="subSpan2">호텔</span></a></li>
+                                <li class="underSub2"><a href="./Car.html">Car Rental<br><span class="subSpan2">렌터카</span></a></li>
+                                <li class="underSub2"><a href="./Pass.html">Pass / Ticket<br><span class="subSpan2">패스 / 입장권</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="overnav2" class="under33"><a>Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
+                        <li class="under55" ><a id="under55" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                    </ul>
+                    <section id="display-section2" class="display-section2">
+                        <div class="container2">
+                            <p id="sec-sub" class="sec-sub">Trip Space에서 추천하는 가봐야할 대한민국</p>
+                            <h1 id="sec-tit" class="sec-tit">Domestic Trip</h1>
+                            <p id="sec-detail" class="sec-detail">대한민국 구석구석을 여행하는<br> 국내테마여행, 국내버스여행, 기차여행, 섬여행, 드라마촬영지 등을<br> 둘러보는 아름다운 대한민국 여행 일번지!</p>
+                        <button class="opacityBtn">자세히 보기 ></button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!-- /slider-wrapper -->
+        <div class="containers">
+
+            <div class="sub_box">
+                <div class="sub_body">
+                    <div class="line_box blank_line_box">
+                        <h1 class="sec-tit Fast line_head">Fast Search</h1>
+                        <div class="line_head line1">
+                            <label><i class="fas fa-map-marker-alt icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">여행도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line2">
+                            <label><i class="fas fa-plane icon"></i></label>
+                            <select class="select_option">
+                                <option value="1">출발도시</option>
+                                <option value="2">서울(인천/김포)</option>
+                                <option value="3">부산</option>
+                                <option value="4">대구</option>
+                                <option value="5">청주</option>
+                                <option value="6">광주(무안)</option>
+                                <option value="7">제주</option>
+                                <option value="8">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head line3">
+                            <label><i class="fas fa-calendar-alt icon"></i></label>
+                            <input id="datepicker1" type="text" placeholder="출발일자"/>
+                        </div>
+                        <div class="line_head line4">
+                            <input id="ex_chk" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk" class="chck">평일</label>
+
+                            <input id="ex_chk2" type="checkbox" name="color" value="red">
+                            <label for="ex_chk2">주말</label>
+                        </div>
+                        <div class="line_head line5">
+                            <label><i class="fas fa-search icons"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head line6">
+                            <button class="searchBtn">검색하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /container -->
+        <section class="blog-section blog-section2">
+            <div class="container3">
+                <p class="sec-sub">국내여행 BEST 상품을 지도로 확인해보세요.</p>
+                <h1 class="sec-tit under">Domestic Tour</h1>
+                
+                <div class="localMap">
+                    <div id="canvas">
+                        <div id="south"></div>
+                        <div id="seoul"><h2>서울특별시</h2></div>
+                        <div id="gygg"><h2>경기도</h2></div>
+                        <div id="incheon"><h2>인천광역시</h2></div>
+                        <div id="gangwon"><h2>강원도</h2></div>
+                        <div id="chungbuk"><h2>충청북도</h2></div>
+                        <div id="chungnam"><h2>충청남도</h2></div>
+                        <div id="daejeon"><h2>대전광역시</h2></div>
+                        <div id="sejong"><h2>세종특별자치시</h2></div>
+                        <div id="gwangju"><h2>광주광역시</h2></div>
+                        <div id="jeonbuk"><h2>전라북도</h2></div>
+                        <div id="jeonnam"><h2>전라남도</h2></div>
+                        <div id="gyeongbuk"><h2>경상북도</h2></div>
+                        <div id="gyeongnam"><h2>경상남도</h2></div>
+                        <div id="daegu"><h2>대구광역시</h2></div>
+                        <div id="busan"><h2>부산광역시</h2></div>
+                        <div id="ulsan"><h2>울산광역시</h2></div>
+                        <div id="jeju"><h2>제주특별자치도</h2></div>
+                    </div>
+
+                    <div class="canvasInfo">
+                        <div class="canvasImg">
+                            <img id="transImg" src="img/canvas1.jpg" alt="" style="width: 370px;">
+                        </div>
+                        <div class="canvasDetail">
+                            <p id="cityName" class="country2">Seoul</p>
+                            <h3 id="tourName" class="canTitle">Jong-ro Tour</h3>
+                            <div class="tripMake">
+                                <span><i class="fas fa-home"></i>숙박</span>
+                                <span><i class="fas fa-subway"></i>기차</span>
+                                <span><i class="fas fa-car"></i>렌터카</span>
+                                <span><i class="fas fa-copy"></i>입장권</span>
+                            </div>
+                            <p id="tourInfo" class="canSub">
+                                서울 여행의 First Class!<br>
+                                한국의 역사와 문화의 향기가 넘치는 더욱 특별한 종로 여행, 고품격
+                                내나라<br> 여행 시리즈는 품격 있는 호텔&리조트로 격이 다른 휴식을
+                                만끽할 수 있으며, 정성이 가득담긴 지역별 미식단과 함께 멋과 맛이
+                                함께하는 여행을 즐겨보세요. 장거리 투어를 위한 프리미엄 전용 버스를
+                                이용하실 수 있으며, 전담가이드 세심한 배정으로 고객님의 편안한 여행만을 생각하겠습니다.
+                            </p>
+                            <button class="opacityBtn2">+ 자세히 보기</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <hr class="horizon" style="margin-left: 15%;">
+
+        <section class="calanderSection">
+            <p class="sec-sub">자신의 일정에 맞게 국내여행 상품을 선택해보세요!</p>
+            <h1 class="sec-tit under">Trip Calander</h1>
+        <div class="calWrap">
+            <div class="calendar">
+                <div class="month">
+                    <div class="prev" onclick="moveDate('prev');">
+                        <span>&#10094</span>
+                    </div>
+                    <div>
+                        <h2 id="month">Febuary</h2>
+                        <p id="date_str"></p>
+                    </div>
+                    <div class="next" onclick="moveDate('next');">
+                        <span>&#10095</span>
+                    </div>
+
+                </div>
+                <div class="weekend">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
+            </div>    
+            
+                <div class="calendar-left" >
+                    <div id="num-date" class="num-date"></div>
+                    <div id="dayName" class="dayName"></div>
+                    
+                    <hr class="event-line"/>
+                    
+                    <div class="calBox">
+                        <div class="calInfo">
+                            <span class="calInfo-title"><span class="calInfo-span">KTX</span> 강릉시티투어 - [정동진+오죽헌+안목항]</span>
+                            <span class="calInfo-price">99,000원</span>
+                        </div>
+                        <div class="add-event"><span class="add">+</span></div>
+
+                    </div>
+                    <div class="calBox">
+                        <div class="calInfo">
+                            <span class="calInfo-title"><span class="calInfo-span">AIR</span> 제주도자유여행 - [동백언덕 카멜리아힐]</span>
+                            <span class="calInfo-price">256,000원</span>
+                        </div>
+                        <div class="add-event"><span class="add">+</span></div>
+
+                    </div>
+                    <div class="calBox">
+                        <div class="calInfo">
+                            <span class="calInfo-title"><span class="calInfo-span">AIR + CAR + HOTEL</span> 제주테마투어 - [착한특가]</span>
+                            <span class="calInfo-price">268,000원</span>
+                        </div>
+                        <div class="add-event"><span class="add">+</span></div>
+
+                    </div>
+                    <div class="calBox">
+                        <div class="calInfo">
+                            <span class="calInfo-title"><span class="calInfo-span">BUS</span> 거제/남해 2박 - [남해+통영+거제+진주]</span>
+                            <span class="calInfo-price">299,000원</span>
+                        </div>
+                        <div class="add-event"><span class="add">+</span></div>
+
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <hr class="horizon" style="margin-left: 15%;">
+        <section class="work-section">
+            <p class="sec-sub">Trip Space의 더 많은 국내여행 상품을 만나보세요.</p>
+            <h1 class="sec-tit under">Package & self-guided Trip</h1>
+            <div id="floatMenu" class="work-donation2">
+                <div class="container4">
+                    <p class="Fast2">Fast Search</p>
+                    <hr class="horizon2">
+                    <div class="sub_box2">
+                        
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-map-marker-alt mark"></i>여행도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-plane mark"></i>출발도시</label><br>
+                            <select class="select_option2">
+                                <option value="1">서울(인천/김포)</option>
+                                <option value="2">부산</option>
+                                <option value="3">대구</option>
+                                <option value="4">청주</option>
+                                <option value="5">광주(무안)</option>
+                                <option value="6">제주</option>
+                                <option value="7">강원(양양)</option>
+                            </select>
+                        </div>
+                        <div class="line_head2">
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>출발일자</label><br>
+                            <input id="datepicker2" type="text" placeholder="yy-mm-dd"/><br>
+                            <label class="label"><i class="fas fa-calendar-alt mark"></i>도착일자</label><br>
+                            <input id="datepicker3" type="text" placeholder="yy-mm-dd"/>
+                        </div>
+                        <div class="line_head2">
+                            <input id="ex_chk3" type="checkbox" name="color" value="blue">
+                            <label for="ex_chk3" class="chcks">평일</label>
+
+                            <input id="ex_chk4" type="checkbox" name="color" value="red">
+                            <label for="ex_chk4">주말</label>
+                        </div>
+                        <div class="line_head3" data-min="4" data-max="32">
+                            <div class="length__title field-title" data-length='0'>
+                                <label class="label"><i class="fas fa-dollar-sign mark"></i>가격</label>
+                                <span id="demo" class="demo"></span>
+                            </div>
+                            <input id="sliderBar" class="sliderBar" type="range" min="10" max="1000" value="100"/>
+                            <br><span class="slider_price">10만원</span>
+                            <span class="slider_price2">1000만원</span>
+                        </div>
+                        <div class="line_head2">
+                            <label><i class="fas fa-search"></i></label>
+                            <input type="text" placeholder=""/>
+                        </div>
+                        <div class="line_head2">
+                            <button class="searchBtn2">검색하기</button>
+                        </div>
+                           
+                    </div>
+                </div><!-- /container -->
+            </div>
+            <div class="work-list">
+                <div id="workBox1" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg" src="./img/domesticSub1.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Mokpo</p>
+                        <h3 class="workTitle">목포 [내나라 여행 / 남도 일주 3일]</h3>
+                        <p class="workDtail">"멋" 그리고 "맛"은 하나 입니다. 내나라여행 남도 일주를 경험 하세요.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 2박 3일</li>
+                            <li class="workList">방문도시 : 고산, 목포, 담양</li>
+                            <li class="workList">숙박 : 현대호텔(바다전망)</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 04월 24일 (금) 09:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 04월 26일 (일) 20:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>539,900</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox2" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg2" src="./img/domesticSub2.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Seoul</p>
+                        <h3 class="workTitle">서울 [겨울방학 특집 / 인사동 즐기기]</h3>
+                        <p class="workDtail">이번 겨울방학엔 뭐하지? 서울을 제대로 즐기는 확실한 방법!</p>
+                        <ul>
+                            <li class="workList">1. 인사동 즐기기 : 인사동 문화해설</li>
+                            <li class="workList">2. 런닝맨 체험관 : 런닝맨이 되어 미션 완수하기</li>
+                            <li class="workList">3. 서울대학교 탐방 : 서울대 멘토와의 인터뷰</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 03일 (화) 09:45</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 14일 (수) 20:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>115,000</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox3" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg3" src="./img/domesticSub3.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Jeonju</p>
+                        <h3 class="workTitle">전주 [군산근대문화거리 / 전주한옥마을]</h3>
+                        <p class="workDtail">서해 금빛열차타고 떠나는 전라북도 군산과 전주 여행! 핫플레이스 근대 문화 <br>중심도시 군산의 명소만 쏙쏙 둘러볼수 있는 당일 기차여행입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 당일</li>
+                            <li class="workList">방문도시 : 전주, 군산</li>
+                            <li class="workList">기타사항 : 본 상품은 인솔자 및 가이드가 별도로 없습니다.</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 05일 (수)08:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 05일 (수)21:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>69,900</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="workBtn">
+                    <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                </div>
+            </div>
+            
+
+            <div class="work-list2">
+                <div id="workBox4" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg4" src="./img/domesticSub4.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Ulleungdo</p>
+                        <h3 class="workTitle">울릉도 [맑은 공기의 청정 지역!]</h3>
+                        <p class="workDtail">초특가 금액으로 즐기는 특전! 미세먼지 없는 청정도시 울릉도 2박!</p>
+                        <ul>
+                            <li class="workList">여행기간 : 2박 3일</li>
+                            <li class="workList">방문도시 : 울릉도, 독도, 죽도</li>
+                            <li class="workList">기타사항 : 출발인원에따라 항구가(묵호항) 변경 될 수도 있습니다.</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 04월 05일 (일)</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 04월 07일 (화)</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>239,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="workBox5" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg5" src="./img/domesticSub5.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Gangneung</p>
+                        <h3 class="workTitle">강릉 [강릉시티투어 - 강릉 / 정동진]</h3>
+                        <p class="workDtail">볼거리, 먹거리가 가득한 hot이슈 강릉시티투어!</p>
+                        <ul>
+                            <li class="workList">여행기간 : 당일</li>
+                            <li class="workList">추가상품 : 강릉의 대표 별미 초당 순두부 중식제공!</li>
+                            <li class="workList">기타사항 : 왕복 열차료, 연계차량료, 중식1회, 입장료 포함</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 04월 27일 (월)</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 04월 27일 (월)</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>99,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="workBox6" class="workBox">
+                    <div class="workImg">
+                        <img id="mapImg6" src="./img/domesticSub6.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Yeo-su</p>
+                        <h3 class="workTitle">여수 [해양레일바이크 / 오동도 해양케이블카]</h3>
+                        <p class="workDtail">호남선 KTX 개통으로 당일로 여수를 즐기다! 해양케이블카 및 유람선 타고 <br>즐길 수 있는 추천 당일 상품입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 당일</li>
+                            <li class="workList">이용상품 : 한려해상 크루즈, 여수해양케이블카, 레일바이크</li>
+                            <li class="workList">기타사항 : KTX 열차료, 유람선료, 케이블카&레일바이크 체험료 포함</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 14일 (토)</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 14일 (토)</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>155,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>
+    </div><!-- /wrap -->
+    <div class="clear"></div>
+
+    <div class="footer_box">
+        <img class="footer_logo2" src="./img/solar-system.png" alt="">
+        <img src="./img/logo.png" class="footer_logo" alt=""> COPYRIGHT ⓒ TRIP SPACE COMPANY. ALL RIGHTS RESERVED.
+    </div>    
+    <script src="js/raphael_min.js"></script>
+    <script src="js/raphael_path_s.korea.js"></script>
+    <script src="js/local.js"></script>
+</body>
+</html>
