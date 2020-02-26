@@ -80,8 +80,9 @@ body{
     background:none;
     font-weight: 500;
     border-bottom: 0.5px solid #ffffffcc;
-    margin-left: 60px;
-    padding-bottom: 10px;
+    margin-left: 55px;
+    /* padding-bottom: 10px; */
+    border-bottom: 0.5px solid #ffffffcc;
 }
 .mainMenu{
     position: absolute;
@@ -92,12 +93,14 @@ body{
 }
 .mainNav li{
     float:left;
-    margin-right:60px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom: 20px;
     border-bottom:0;
 }
-.mainNav li:nth-child(5){
-    margin-right:30px;
-}
+.mainNav li:nth-child(1){
+    padding-left:0;
+} 
 .mainSpan{
     font-size: 11px;
     font-weight: 100;
@@ -118,16 +121,16 @@ body{
     
 }
 .subNav{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  width: 60%;
-  left: 6.7%;
-  top: 60%;
-  padding-top: 30px;
-  /* border: 1px solid #ffffff; */
-  display: none;  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    /* width: 60%; */
+    left: 60px;
+    top: 40px;
+    padding-top: 60px;
+    /* border: 1px solid #ffffff; */
+    display: none; 
 }
 .underSub {
   margin: 0;
@@ -151,8 +154,8 @@ body{
 cursor: pointer;
 }
 .nav-underline {
-  position: absolute;
-  top: 78%;
+    position: relative;
+    top: 74.5px;
   left: 6.5%;
   width: 12%;
   height: 2px;
@@ -160,24 +163,17 @@ cursor: pointer;
   display: none;
   transition: all .3s ease-in-out;
 }
-.under1:hover ~ .nav-underline {
-  display: inline-block;
+.under1:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-.under2:hover ~ .nav-underline {
-  margin-left: 12.5%;
-  width: 15%;
-  display: inline-block;
+.under2:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-
-.under3:hover ~ .nav-underline {
-  margin-left: 30%;
-  width: 13%;
-  display: inline-block;
+.under3:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-.under5:hover ~ .nav-underline {
-    margin-left: 47%;
-    width: 15.5%;
-    display: inline-block;
+.under5:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
 
 
@@ -890,9 +886,11 @@ a:hover{color:#1bc1a3;} */
 .ac-sub-go-top{
     width: 60px;
     height: 60px;
-    bottom: calc(22% - 35px);
+    bottom: calc(29% - 35px);
     position: fixed;
-    right: calc((100% - 1230px)/ 2 - 100px);
+    /* right: calc((100% - 1290px)/ 2 - 95px); */
+    right: 1%;
+    background-color: #dbdbdb;
     display: inline-block;
     font-size: 25px;
     border: none;

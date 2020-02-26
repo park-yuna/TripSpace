@@ -289,32 +289,34 @@ html, body {
 }
 
 .mainNav{
-    padding: 0;
-    float: left;
-    list-style-type: none;
-    display:block !important;
-    position: static;
-    background:none;
-    font-weight: 500;
-    border-bottom: 0.5px solid #ffffffcc;
-    margin-left: 60px;
-    padding-bottom: 10px;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+  display:block !important;
+  position: static;
+  background:none;
+  font-weight: 500;
+  border-bottom: 0.5px solid #ffffffcc;
+  margin-left: 55px;
 }
 .mainMenu{
-    position: absolute;
-    top: 15%;
-    width: 60%;
-    left: 14%;
-    margin-top: 0.5%;
+  position: absolute;
+  top: 1%;
+  width: 60%;
+  left: 14%;
+  margin-top: 0.5%;
 }
 .mainNav li{
-    float:left;
-    margin-right:60px;
-    border-bottom:0;
+  float:left;
+  /* margin-right:60px; */
+  padding-left:30px;
+  padding-right:30px;
+  padding-bottom: 20px;
+  border-bottom:0;
 }
-.mainNav li:nth-child(5){
-    margin-right:30px;
-}
+.mainNav li:nth-child(1){
+  padding-left:0;
+} 
 .mainSpan{
     font-size: 11px;
     font-weight: 100;
@@ -367,9 +369,9 @@ html, body {
   cursor: pointer;
   }
 
-.nav-underline {
-  position: absolute;
-  top: 78%;
+  .nav-underline {
+    position: relative;
+    top: 74.5px;
   left: 6.5%;
   width: 12%;
   height: 2px;
@@ -377,24 +379,17 @@ html, body {
   display: none;
   transition: all .3s ease-in-out;
 }
-.under1:hover ~ .nav-underline {
-  display: inline-block;
+.under1:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-.under2:hover ~ .nav-underline {
-  margin-left: 12.5%;
-  width: 15%;
-  display: inline-block;
+.under2:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-
-.under3:hover ~ .nav-underline {
-  margin-left: 30%;
-  width: 13%;
-  display: inline-block;
+.under3:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
-.under5:hover ~ .nav-underline {
-  margin-left: 45%;
-  width: 16.5%;
-  display: inline-block;
+.under5:hover{
+    border-bottom: 2px solid rgb(150, 218, 240);
 }
 
 

@@ -7,14 +7,13 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
     <meta http-equiv="pragma" content="no-cache" />
-    <title>Trip Spsce</title>
+    <title>Trip Space</title>
     <link rel="stylesheet" href="css/Asia.css">
     <script src="https://kit.fontawesome.com/1373872436.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.lettering.js"></script>
     <script src="js/circletype.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
@@ -41,9 +40,6 @@
                         </ul>
                     </nav>
                     <div class="logo">
-                        <!-- <div id="logoCircle" class="logo_Circle" onclick="location.href='http://www.daum.net';">
-                            &nbsp; <span class="mainLogo">&nbsp; Trip Space :</span> Travel, where have you been? &nbsp;
-                        </div> -->
                         <a href="index.html">
                             <img class="logoName" src="./img/logo.png" alt="">
                             <img class="logoImg" src="./img/solar-system.png" alt="">
@@ -87,7 +83,6 @@
             <div id="cfixed" class=" cfixed">
                 <nav>
                     <ul class="gnb">
-                        <!-- <li id="closeBtn"><a><i class="fas fa-times fa-4x"></i></a></li> -->
                         <li id="closeBtn"><a><img class="closed" src="./img/close.png" style="width: 40px;"></a></li>
                     </ul>
                 </nav>
@@ -137,41 +132,49 @@
                     <div class="line_box blank_line_box">
                         <h1 class="sec-tit Fast line_head">Fast Search</h1>
                         <div class="line_head line1">
-                            <label><i class="fas fa-map-marker-alt icon"></i></label>
-                            <select class="select_option">
-                                <option value="1">여행도시</option>
-                                <option value="2">서울(인천/김포)</option>
-                                <option value="3">부산</option>
-                                <option value="4">대구</option>
-                                <option value="5">청주</option>
-                                <option value="6">광주(무안)</option>
-                                <option value="7">제주</option>
-                                <option value="8">강원(양양)</option>
-                            </select>
+                            <span>
+                                <label><i class="fas fa-map-marker-alt icon"></i></label>
+                                <select class="select_option">
+                                    <option value="1">여행도시</option>
+                                    <option value="2">서울(인천/김포)</option>
+                                    <option value="3">부산</option>
+                                    <option value="4">대구</option>
+                                    <option value="5">청주</option>
+                                    <option value="6">광주(무안)</option>
+                                    <option value="7">제주</option>
+                                    <option value="8">강원(양양)</option>
+                                </select>
+                            </span>
                         </div>
                         <div class="line_head line2">
-                            <label><i class="fas fa-plane icon"></i></label>
-                            <select class="select_option">
-                                <option value="1">출발도시</option>
-                                <option value="2">서울(인천/김포)</option>
-                                <option value="3">부산</option>
-                                <option value="4">대구</option>
-                                <option value="5">청주</option>
-                                <option value="6">광주(무안)</option>
-                                <option value="7">제주</option>
-                                <option value="8">강원(양양)</option>
-                            </select>
+                            <span>
+                                <label><i class="fas fa-plane icon"></i></label>
+                                <select class="select_option">
+                                    <option value="1">출발도시</option>
+                                    <option value="2">서울(인천/김포)</option>
+                                    <option value="3">부산</option>
+                                    <option value="4">대구</option>
+                                    <option value="5">청주</option>
+                                    <option value="6">광주(무안)</option>
+                                    <option value="7">제주</option>
+                                    <option value="8">강원(양양)</option>
+                                </select>
+                            </span>
                         </div>
                         <div class="line_head line3">
-                            <label><i class="fas fa-calendar-alt icon"></i></label>
-                            <input id="datepicker1" class="datedropper_single" type="text" placeholder="출발일자"/>
+                            <span>
+                                <label><i class="fas fa-calendar-alt icon"></i></label>
+                                <input id="datepicker1" class="datedropper_single" type="text" placeholder="출발일자"/>
+                            </span>    
                         </div>
                         <div class="line_head line4">
-                            <input id="ex_chk" type="checkbox" name="color" value="blue">
-                            <label for="ex_chk" class="chck">평일</label>
+                            <span>
+                                <input id="ex_chk" type="checkbox" name="color" value="blue">
+                                <label for="ex_chk" class="chck">평일</label>
 
-                            <input id="ex_chk2" type="checkbox" name="color" value="red">
-                            <label for="ex_chk2">주말</label>
+                                <input id="ex_chk2" type="checkbox" name="color" value="red">
+                                <label for="ex_chk2">주말</label>
+                            </span>
                         </div>
                         <div class="line_head line5">
                             <label><i class="fas fa-search icons"></i></label>
@@ -206,7 +209,6 @@
                                     </i>
                                 </div>
                             </div>
-                            <!-- <div class="numBox"><h1 class="sec-tit">1</h1></div> -->
 
                             <div class="numBox" style="text-align:center">
                                 <span id="num1" class="num1">1</span>  
@@ -509,7 +511,6 @@
                     </div>
                 </div>
 
-
                 <div id="workBox6" class="workBox">
                     <div class="workImg">
                         <img id="mapImg6" src="./img/AsiaSub6.jpg" alt="" style="width: 333px;">
@@ -545,9 +546,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="workBtn">
-                    <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
-                </div> -->
             </div>
         </section>
         <button type="button" name="button" class="ac-sub-go-top">
