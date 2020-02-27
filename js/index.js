@@ -421,17 +421,23 @@ am4core.ready(function() {
 
       var areaName = ev.target.dataItem.dataContext.name;
       setTimeout(function(){
-        var asiaArr = ["South Korea", "Japan", "China", "Taiwan", "Philippines", "Vietnam", "Lao People's Democratic Republic", "Thailland", "Cambodia", "Hong Kong", "Malaysia", "Indonesia", "Papua New Guinea", "Mongolia"];
+        var asiaArr = ["South Korea", "Japan", "China", "Taiwan", "Philippines", "Vietnam", "Myanmar", "Lao People's Democratic Republic", "Thailland", "Cambodia", "Hong Kong", "Malaysia", "Indonesia", "Papua New Guinea", "Mongolia"];
         var AmericaArr = ["Canada", "United States", "Mexico", "Guatemala", "Belize", "Cuba", "Bahamas","Dominican Republic", "Haiti", "Jamaica", "Puerto Rico", "Honduras", "El Salvador", "Nicaragua", "Costa Rica", "Panama", "Colombia", "Venezuela","Guyana", "Ecuador", "Peru", "Brazil", "Suriname", "French Guiana", "Bolivia", "Paraguay", "Chile", "Argentina", "Uruguay"];
         var EuropeArr = ["Norway", "Sweden", "Finland", "Estonia", "Latvia", "Lithuania", "Belarus", "Russia", "Poland","Ukraine", "Moldova", "Romania", "Bulgaria", "Turkey", "Greece", "Albania", "Bosnia and Herzegovina", "Serbia", "Montenegro","Kosovo", "North Macedonia", "Italy", "France", "Spain", "Portugal", "United Kingdom", "Ireland", "Belgium", "Luxembourg", "Switzerland", "Austria", "Slovenia", "Croatia", "Hungary", "Czechia", "Germany", "Netherlands", "Denmark", "Slovakia"];
+        var AfricaArr = ["Morocco", "Algeria", "Western Sahara", "Mauritania", "Senegal", "Gambia", "Guinea-Bissau", "Guinea", "Sierra Leone", "Liberia", "Cote d'lboire", "Ghana", "Mali", "Tunisia", "Burkina Faso", "Ghana", "Togo", "Benin", "Niger", "Nigeria", "Libya", "Egypt", "Sudan", "Chad", "Cameroon", "Eritrea", "Ethiopia", "Somalia", "South Sudan", "Central African Republic", "Kenya", "Uganda", "Democratic Republic of Congo", "Republic of Congo", "Gabon", "Equatorial Guinea", "Rwanda", "Tanzania", "Burundi", "Angola", "Zambia", "Malawi", "Mozambique", "Botswana", "Namibia", "South Africa", "Lesotho", "eSwatini", "Zimbabwe", "Madagascar", "Georgia", "Azerbaijan", "Lebanon", "Israel", "Jordan", "Palestinian Territories", "Syria", "Iraq", "Saudi Arabia", "Iran", "Kuwait", "Qatar", "United Arab Emirates", "Yemen", "Omen", "Kazakhstan", "Uzbekistan", "Turkmenistan", "Kyrgyzstan", "Tajikistan", "Afghanistan", "Pakistan", "India", "Nepal", "Bhutan", "Bangladesh", "Sri Lanka"];
+        var OceaniaArr = ["Australia", "New Caledonia", "Fiji", "New Zealand", "Guam", "Northern Mariana Islands"];
         //areaName에 따라 변경할 html 연결하면 됨.
         var locationHtml = "./index.html";
         if(asiaArr.indexOf(areaName) > -1){ //asia국가중에 있는지 먼저 찾고
             locationHtml = "./Asia.html"
         }else if(AmericaArr.indexOf(areaName) > -1){ //없으면 아메리카국가중에서 찾는다
             locationHtml = "./America.html"
-        }else if(EuropeArr.indexOf(areaName) > -1){ //아시아 아메리카 둘다 없으면 유럽에서 찾는다.
+        }else if(EuropeArr.indexOf(areaName) > -1){ 
             locationHtml = "./Europe.html"
+        }else if(AfricaArr.indexOf(areaName) > -1){ 
+            locationHtml = "./Africa.html"
+        }else if(OceaniaArr.indexOf(areaName) > -1){ 
+            locationHtml = "./Oceania.html"
         }else{ //모두 없으면 경고창
             alert("해당 국가는 준비 중입니다.");
             return;

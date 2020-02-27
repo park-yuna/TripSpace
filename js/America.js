@@ -428,6 +428,20 @@ function evtFunc(){
         $("#mapImg6").attr("src", "img/americaSub6.jpg");
         $("#mapImg6").css("filter", "none");
     });
+    $("#workBox7").hover(function(){
+        $("#mapImg7").attr("src", "./img/AmericaSub1-1.png");
+        $("#mapImg7").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg7").attr("src", "img/AmericaSub7.jpg");
+        $("#mapImg7").css("filter", "none");
+    });
+    $("#workBox8").hover(function(){
+        $("#mapImg8").attr("src", "./img/AmericaSub1-1.png");
+        $("#mapImg8").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg8").attr("src", "img/AmericaSub8.jpg");
+        $("#mapImg8").css("filter", "none");
+    });
     
 
     $(".workBtn").click(function(){

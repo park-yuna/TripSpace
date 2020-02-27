@@ -121,7 +121,7 @@ $(document).ready(function(){
     createDatePicker();
  
     maxValue = $(".work-list").offset().top;
-    //$("#floatMenu").css('top', maxValue+"px"); //처음 세팅
+    $("#floatMenu").css('top', maxValue+"px"); //처음 세팅
     action();
 
     $('countUp').countUp({
@@ -428,6 +428,20 @@ function evtFunc(){
     }, function(){
         $("#mapImg6").attr("src", "img/africaSub6.jpg");
         $("#mapImg6").css("filter", "none");
+    });
+    $("#workBox7").hover(function(){
+        $("#mapImg7").attr("src", "./img/africaSub5-1.png");
+        $("#mapImg7").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg7").attr("src", "img/AfricaSub7.jpg");
+        $("#mapImg7").css("filter", "none");
+    });
+    $("#workBox8").hover(function(){
+        $("#mapImg8").attr("src", "./img/africaSub3-1.png");
+        $("#mapImg8").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg8").attr("src", "img/AfricaSub8.jpg");
+        $("#mapImg8").css("filter", "none");
     });
     
 

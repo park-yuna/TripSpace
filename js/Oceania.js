@@ -120,6 +120,7 @@ $(document).ready(function(){
     createDatePicker();
  
     maxValue = $(".work-list").offset().top;
+    $("#floatMenu").css('top', maxValue+"px"); //처음 세팅
     action();
 
     $('countUp').countUp({
@@ -415,6 +416,20 @@ function evtFunc(){
     }, function(){
         $("#mapImg6").attr("src", "img/oceaniaSub6.jpg");
         $("#mapImg6").css("filter", "none");
+    });
+    $("#workBox7").hover(function(){
+        $("#mapImg7").attr("src", "./img/oceaniaSub1-1.png");
+        $("#mapImg7").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg7").attr("src", "img/OceaniaSub7.jpg");
+        $("#mapImg7").css("filter", "none");
+    });
+    $("#workBox8").hover(function(){
+        $("#mapImg8").attr("src", "./img/oceaniaSub2-1.png");
+        $("#mapImg8").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg8").attr("src", "img/OceaniaSub8.jpg");
+        $("#mapImg8").css("filter", "none");
     });
     
 

@@ -78,10 +78,10 @@ var BestInfo = [
         tourTitle3 : "몰디브 이나후라 리조트 7일",
         tourDetail1 : "그동안 동남아에서 느낄 수 없었던 감동! 웅장한 호수위의 평화로운 미얀마의 색다름을 경험해보세요.",
         tourDetail2 : "시간이 멈춘 나라, 라오스! 그림속을 여행하는 듯한 착각에 빠지게 만드는 자연의 절경을 만끽하세요.",
-        tourDetail3 : "5성급 이상 리조트로 구성된 몰디브 럭셔리 패키지 상품입니다.",
-        price1 : "1,750,000원~",
-        price2 : "1,989,900원~",
-        price3 : "1,799,900원~",
+        tourDetail3 : "5성급 이상 리조트로 구성된 몰디브 럭셔리 패키지 상품으로 여유로움을 만끽하세요.",
+        price1 : "750,000원~",
+        price2 : "989,900원~",
+        price3 : "3,799,900원~",
     },
     {
         imgUrl1 : "img/asiaBest4.jpg",
@@ -91,7 +91,7 @@ var BestInfo = [
         tourTitle1 : "발리 5일",
         tourTitle2 : "대만 5일",
         tourTitle3 : "치앙마이 3~4일",
-        tourDetail1 : "발리에서 꼭 가봐야 할 명소 방문 일정으로 채워진 대표 관광형 상품입니다.",
+        tourDetail1 : "먹고 기도하고 사랑하라! 발리에서 꼭 가봐야 할 명소 방문 일정으로 채워진 대표 관광형 상품입니다.",
         tourDetail2 : "대만에서 진정한 패키지 여행을 즐길 수 있도록 부담Zero에 도전하는 강력 추천 상품 입니다.",
         tourDetail3 : "당신의 바쁜 일상에 낭만과 여유를 선사할 감성여행지 치앙마이! 지금은 치앙마이로 떠나야 할 때!",
         price1 : "2,352,000원~",
@@ -108,7 +108,7 @@ var BestInfo = [
         tourTitle3 : "캄보디아 앙코르왓 5일",
         tourDetail1 : "프리미엄 5성급 호텔 투숙과, 국적기 항공 사용, 제우스 전속 가이드와 함께하는 프리미엄 여행 상품입니다.",
         tourDetail2 : "엄선된 식사,호텔과 여유로운 일정, 현지 부담은 줄인 프리미엄 패키지 상품입니다.",
-        tourDetail3 : "일급 리조트로 실속있는 여행을 선호하는 분에게 추천하는 상품입니다.",
+        tourDetail3 : "캄보디아에서 꼭 가봐야 할 일급 리조트로 실속있는 여행을 선호하는 분에게 추천하는 상품입니다.",
         price1 : "2,130,000원~",
         price2 : "2,271,700원~",
         price3 : "1,347,200원~",
@@ -121,7 +121,7 @@ $(document).ready(function(){
     createDatePicker();
  
     maxValue = $(".work-list").offset().top;
-    //$("#floatMenu").css('top', maxValue+"px"); //처음 세팅
+    $("#floatMenu").css('top', maxValue+"px"); //처음 세팅
     action();
 
     $('countUp').countUp({
@@ -135,6 +135,10 @@ $(document).ready(function(){
           scrollTop: '0'
         }, 700);
     });
+
+    //로드가 완료되면 workImg의 높이값을 가져와서 frame들의 높이를 지정해준다.
+    // var wImgHeight = $(".workImg").height();
+    // $(".workBox").css("height", wImgHeight + "px");
 });
 
 
@@ -405,8 +409,8 @@ function evtFunc(){
         $("#mapImg3").attr("src", "./img/AsiaSub1-1.png");
         $("#mapImg3").css("filter", "brightness(50%)");
     }, function(){
-        $("#mapImg3").attr("src", "./img/AsiaSub3.jpg");
-        $("#mapImg3").css("filter", "none");
+        $("#mapImg2").attr("src", "./img/AsiaSub3.jpg");
+        $("#mapImg2").css("filter", "none");
     });
     $("#workBox4").hover(function(){
         $("#mapImg4").attr("src", "./img/AsiaSub4-1.png");
@@ -428,6 +432,20 @@ function evtFunc(){
     }, function(){
         $("#mapImg6").attr("src", "./img/AsiaSub6.jpg");
         $("#mapImg6").css("filter", "none");
+    });
+    $("#workBox7").hover(function(){
+        $("#mapImg7").attr("src", "./img/AsiaSub6-1.png");
+        $("#mapImg7").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg7").attr("src", "./img/AsiaSub7.jpg");
+        $("#mapImg7").css("filter", "none");
+    });
+    $("#workBox8").hover(function(){
+        $("#mapImg8").attr("src", "./img/AsiaSub1-1.png");
+        $("#mapImg8").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg8").attr("src", "./img/AsiaSub8.jpg");
+        $("#mapImg8").css("filter", "none");
     });
     
     $(".workBtn").click(function(){
@@ -494,3 +512,8 @@ function createDatePicker(){
     });
 }
 
+function loginChecker(){
+    if(confirm('로그인 후 이용 가능합니다.')){
+        location.href='./login.html'
+    }
+}

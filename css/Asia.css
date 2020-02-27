@@ -410,7 +410,7 @@ html, body {
     font-family: 'PT Serif', serif;
     font-size: 20px;
     letter-spacing: 5px;
-    padding-left: 35px;
+    justify-content: center;
     color:rgb(36, 42, 58); 
     padding-top: 30px;
 }
@@ -725,6 +725,7 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
 
 }
 .work-donation{
+    display: block;
     float: left;
     position: absolute;
     top: 1923px;
@@ -737,6 +738,7 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     /* position: absolute; */
     
 }
+
 .work-section .sec-tit{
     margin: 0;
     font-family: 'PT Serif', serif;
@@ -943,6 +945,7 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
 }
 
 
+
 /* work-list */
 
 .workBox{
@@ -963,6 +966,10 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     -webkit-transition: width 1s;
     transition: width 1s;
 }
+.work-media{
+    display: none;
+}
+
 .workInfo{
     float: right;
     width: 485px;
@@ -1073,6 +1080,7 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     padding: 0;
     margin: 0;
     cursor: pointer;
+    justify-content: center;
 }
 .workMore{
     text-align: center;
@@ -1088,6 +1096,85 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
 }
 .work-list2{
     display: none;
+}
+
+@media all and (max-width:1457px){
+    .work-donation{
+        display: none;
+        float: left;
+        position: absolute;
+        top: 1923px;
+        width: 23%;
+        background-color: rgb(248, 248, 248);
+        left: 10%;
+    }
+    .work-media{
+        display: none;
+    }
+}
+@media all and (min-width:1680px){
+    .blog-section{
+        width: 100%;
+        height:95vh;
+        margin-top:110px;
+        margin-bottom: 0;
+    }
+    .work-section{
+        width: 100%;
+        height:130vh;
+        margin-top:70px;
+    }
+    .work-donation{
+        display: none;
+        float: left;
+        position: absolute;
+        top: 1923px;
+        width: 23%;
+        background-color: rgb(248, 248, 248);
+        left: 10%;
+    }
+    .container4{  
+        width: 100%;
+    }
+    .work-list{
+        width: 100%;
+    }
+    .workBox{
+        width:43%;
+        height: 334px;
+        float: left;
+        left: 6%;
+        border: 1px solid #d4d4d4d0;
+        margin-right: 50px;
+        cursor: pointer;
+        /* margin-bottom: 50px; */
+        position: relative;
+    }
+    .work-media{
+        display: block;
+    }
+    .workBtn{
+        width: 300px;
+        height: 70px;
+        border: 1px solid rgb(36, 42, 58);
+        color: rgb(36, 42, 58);
+        font-size: 17px;
+        float: right;
+        position: absolute;
+        right: 41%;
+        padding: 0;
+        margin: 0;
+        margin-top: 4%;
+        cursor: pointer;
+        justify-content: center;
+    }
+    .workBtn:hover {
+        background-color: rgb(36, 42, 58);
+        color: #ffffff;
+        
+        margin-top: 4%;
+        border: none;
+    }
 }
 
 .ac-sub-go-top{
@@ -1232,11 +1319,3 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     from {opacity: .4} 
     to {opacity: 1}
   }
-
-
-
-
-
-
-  
- 
