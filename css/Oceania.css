@@ -214,6 +214,9 @@ html, body {
     color:#ffffff;
     cursor: pointer;
 }
+.under5, .under55{
+    cursor: pointer;
+}
 .mainNav2{
     padding: 0;
     float: left;

@@ -422,6 +422,20 @@ function evtFunc(){
         $("#mapImg6").attr("src", "./img/domesticSub6.jpg");
         $("#mapImg6").css("filter", "none");
     });
+    $("#workBox7").hover(function(){
+        $("#mapImg7").attr("src", "./img/서울.png");
+        $("#mapImg7").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg7").attr("src", "./img/domesticSub7.jpg");
+        $("#mapImg7").css("filter", "none");
+    });
+    $("#workBox8").hover(function(){
+        $("#mapImg8").attr("src", "./img/서울.png");
+        $("#mapImg8").css("filter", "brightness(50%)");
+    }, function(){
+        $("#mapImg8").attr("src", "./img/domesticSub8.jpg");
+        $("#mapImg8").css("filter", "none");
+    });
     
 
     $(".workBtn").click(function(){
@@ -490,6 +504,16 @@ function createDatePicker(){
         dateFormat: 'yy-mm-dd',
         minDate: new Date()
     });
+}
+
+function loginCheck(){
+    var con_test = confirm("로그인 후 이용이 가능합니다.");
+    if(con_test == true){
+        location.href="./login.html";
+    }
+    else{
+        return;
+    }
 }
 
 function renderDate(){

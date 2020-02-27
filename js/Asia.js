@@ -512,8 +512,12 @@ function createDatePicker(){
     });
 }
 
-function loginChecker(){
-    if(confirm('로그인 후 이용 가능합니다.')){
-        location.href='./login.html'
+function loginCheck(){
+    var con_test = confirm("로그인 후 이용이 가능합니다.");
+    if(con_test == true){
+        location.href="./login.html";
+    }
+    else{
+        return;
     }
 }

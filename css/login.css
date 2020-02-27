@@ -391,7 +391,9 @@ html, body {
 .under5:hover{
     border-bottom: 2px solid rgb(150, 218, 240);
 }
-
+.under5, .under55{
+  cursor: pointer;
+}
 
 /* footer */
 

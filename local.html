@@ -49,7 +49,7 @@
                             <li id="press1" class="under1"><a id="under1">Package Trip<br><span class="mainSpan">패키지 여행</span></a></li>
                             <li id="press2" class="under2"><a id="under2">Self-Guided Trip<br><span class="mainSpan">자유 여행</span></a></li>
                             <li class="under3"><a id="under3" href="./local.html">Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
-                            <li class="under5"><a id="under5" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                            <li class="under5"><a id="under5" onClick="loginCheck()">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
                             <div class="nav-underline"></div>
                         </ul>
                     </div>
@@ -111,7 +111,7 @@
                             </ul>
                         </li>
                         <li id="overnav2" class="under33"><a>Domestic Trip<br><span class="mainSpan">국내 여행</span></a></li>
-                        <li class="under55" ><a id="under55" href="./login.html" onClick="alert('로그인 후 이용 가능합니다.')">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
+                        <li class="under55" ><a id="under55" onClick="loginCheck()">Reservation<br><span class="mainSpan">예약 조회</span></a></li>
                     </ul>
                     <section id="display-section2" class="display-section2">
                         <div class="container2">
@@ -491,6 +491,43 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="workBox7" class="workBox work-media">
+                    <div class="workImg">
+                        <img id="mapImg7" src="./img/domesticSub7.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Yeo-su</p>
+                        <h3 class="workTitle">여수 [해양레일바이크 / 오동도 해양케이블카]</h3>
+                        <p class="workDtail">호남선 KTX 개통으로 당일로 여수를 즐기다! 해양케이블카 및 유람선 타고 <br>즐길 수 있는 추천 당일 상품입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 당일</li>
+                            <li class="workList">이용상품 : 한려해상 크루즈, 여수해양케이블카, 레일바이크</li>
+                            <li class="workList">기타사항 : KTX 열차료, 유람선료, 케이블카&레일바이크 체험료 포함</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 14일 (토)</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 14일 (토)</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp2>155,900</countUp2>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="clear"></div>
                 <div class="workBtn">
                     <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
@@ -605,6 +642,43 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="workBox8" class="workBox work-media">
+                    <div class="workImg">
+                        <img id="mapImg8" src="./img/domesticSub8.jpg" alt="" style="width: 333px;">
+                    </div>
+                    <div class="packBtn">
+                        <p class="workMore">More&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i></p>
+                    </div>
+                    <div class="workInfo">
+                        <p class="country">Jeonju</p>
+                        <h3 class="workTitle">전주 [군산근대문화거리 / 전주한옥마을]</h3>
+                        <p class="workDtail">서해 금빛열차타고 떠나는 전라북도 군산과 전주 여행! 핫플레이스 근대 문화 <br>중심도시 군산의 명소만 쏙쏙 둘러볼수 있는 당일 기차여행입니다.</p>
+                        <ul>
+                            <li class="workList">여행기간 : 당일</li>
+                            <li class="workList">방문도시 : 전주, 군산</li>
+                            <li class="workList">기타사항 : 본 상품은 인솔자 및 가이드가 별도로 없습니다.</li>
+                        </ul>
+                        <div class="work-calender">
+                            <div class="calender-left">
+                                <span class="cal-title">
+                                    <i class="far fa-calendar-alt"></i>
+                                    여행일정
+                                </span><br>
+                                <p class="cal-detail"><span class="calBtn">출발</span>2020년 03월 05일 (수)08:00</p>
+                                <p class="cal-detail"><span class="calBtn">도착</span>2020년 03월 05일 (수)21:00</p>
+                            </div>
+                            <div class="calender-right">
+                                <span class="cal-title">
+                                    <i class="fas fa-coins"></i>
+                                    상품가격
+                                </span>
+                                <p class="cal-detail2"><countUp>69,900</countUp>&nbsp;<i class="fas fa-won-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
         <button type="button" name="button" class="ac-sub-go-top"><i class="fas fa-arrow-up"></i></button>

@@ -173,7 +173,9 @@ body{
 .under5:hover{
     border-bottom: 2px solid rgb(150, 218, 240);
 }
-
+.under5, .under55{
+    cursor: pointer;
+}
 
 .container2{
     height:900px;
@@ -794,6 +796,219 @@ a:hover{color:#1bc1a3;} */
     cursor: pointer;
   }
 
+  @media all and (min-width:1680px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 120vh;
+        letter-spacing: -0.02em;  
+    }
+    .container2{
+        height:970px;
+        width:80%;
+        position: relative;
+        top:28%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        margin-top: 1%;
+        background-color: #ffffff;
+        padding-top: 4%;
+        padding-bottom: 3%;
+        border-radius: 20px;
+    }
+    #wrapper{
+        width:80%;
+        height:880px;
+        /* margin:50px auto;
+        height:400px;
+        position:relative;
+        color:#fff;
+        text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;     */
+    
+        position: relative;
+        top:33%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        margin-top: 10px;
+        background-color: #ffffff;
+        /* padding-top: 3%; */
+        padding-bottom: 3%;
+        border-radius: 20px;
+        padding-left: 7%;
+        border-bottom: 15px solid #999999b7;
+    }
+    .bg2{
+        background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/
+        width:100%;
+        height:245vh;
+        position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/  
+    }
+    #slider-wrap{
+        width:100%;
+        height:700px;
+        position:relative;
+        overflow:hidden;
+    }
+    #slider-wrap ul#slider li{
+        float:left;
+        position:relative;
+        width:600px;
+        height:550px;
+        margin-right: 100px;
+        
+    }
+    .sliderInfo{
+        margin-left: 25%;
+        margin-top: 15%;
+    
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+        z-index: 99999;
+    }
+    .sliderInfo2{
+        margin-left: 28%;
+        margin-top: 15%;
+        z-index: 99999;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+    }
+    .sliderInfo3{
+        margin-left: 21%;
+        margin-top: 13%;
+        z-index: 99999;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+    }
+    .btns{
+        position:absolute;
+        width:50px;
+        height:60px;
+        top:40%;
+        margin-top:-25px;
+        line-height:57px;
+        text-align:center;
+        cursor:pointer; 
+        background:rgba(0,0,0,0.1);
+        z-index:100;
+        
+        
+        -webkit-user-select: none;  
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -ms-user-select: none;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+    }
+    .btns:hover{
+        background:rgba(0,0,0,0.3); 
+        color:white;
+    }
+    .dott{
+        width:15px;
+        height:15px;
+        border-radius:50%;
+        background: rgb(36, 42, 58); 
+        position: relative;
+        bottom: -40px;
+        left: -810px;
+        display: inline-block;
+        margin-right: 3%;
+    }
+    .dott2{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgb(36, 42, 58);
+        position: relative;
+        top: -22.5px;
+        left: -52px;
+        display: inline-block;
+        margin-right: 3.3%;
+    }
+    .dott3{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgb(36, 42, 58);
+        position: relative;
+        bottom: -40px;
+        right: -330px;
+        display: inline-block;
+        margin-right: 3%;
+    }
+    .bar{
+        width: 2.5px;
+        height: 171px;
+        background: #999999;
+        position: absolute;
+        left: 88px;
+        top: -134px;
+        margin-right: 4.1%;
+        display: inline-block;
+        z-index: 99;
+    }
+    .bar2{
+        width: 2.5px;
+        height: 171px;
+        background: #999999;
+        position: absolute;
+        left: 154px;
+        top: -134px;
+        margin-right: 4.1%;
+        display: inline-block;
+        z-index: 99;
+    }
+    .bar3{
+        width: 2.5px;
+        height: 171px;
+        background: #999999;
+        position: absolute;
+        right: 30px;
+        top: -134px;
+        margin-right: 4.1%;
+        display: inline-block;
+        z-index: 99;
+    }
+    .bar4{
+        width: 2.5px;
+        height: 171px;
+        background: #999999;
+        position: absolute;
+        right: 96px;
+        top: -134px;
+        margin-right: 4.1%;
+        display: inline-block;
+        z-index: 99;
+    }
+    .dott4{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: rgb(36, 42, 58);
+        position: relative;
+        top: -22.5px;
+        right: -1090px;
+        display: inline-block;
+        margin-right: 3.3%;
+    }
+    #pagination-wrap{
+        min-width:20px;
+        margin-top:500px;
+        margin-left: auto; 
+        margin-right: 150px;
+        height:15px;
+        position:relative;
+        text-align:center;
+    }
+    
+}
 
   /* footer */
 

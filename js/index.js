@@ -377,6 +377,16 @@ function createDatePicker(){
     })
 }
 
+function loginCheck(){
+    var con_test = confirm("로그인 후 이용이 가능합니다.");
+    if(con_test == true){
+        location.href="./login.html";
+    }
+    else{
+        return;
+    }
+}
+
 //amChart 지도 사용
 //map
 am4core.ready(function() {

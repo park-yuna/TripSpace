@@ -180,7 +180,9 @@ cursor: pointer;
     border-bottom: 2px solid rgb(150, 218, 240);
 }
 
-
+.under5, .under55{
+    cursor: pointer;
+}
 .container{
     height:1020px;
     width:80%;
@@ -354,6 +356,35 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     padding-left: 10px;
 }
 
+@media all and (min-width:1680px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        letter-spacing: -0.02em;  
+    }
+    .container{
+        height:1150px;
+        width:80%;
+        position: relative;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        margin-top: 1%;
+        background-color: #ffffff;
+        padding-top: 4%;
+        padding-bottom: 3%;
+        border-radius: 20px;
+    }
+    .bg{
+        background-color:rgba(0, 0, 0, 0.3); /*살짝 투명한 검정으로 배경색*/
+        width:100%;
+        height:155vh;
+        position: absolute; /*다른 요소들 위로 겹쳐질 수 있게함*/  
+    }
+    
+}
 
 /* footer */
 
