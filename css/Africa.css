@@ -24,16 +24,16 @@ html, body {
      background-size: cover; 
 }
 .item1{
-    background-image: url('../img/Asia.jpg');
+    background-image: url('../img/Africa5.jpg');
 }
 .item2{
-    background-image: url('../img/Asia2.jpg');
+    background-image: url('../img/Africa4.jpg');
 }
 .item3{
-    background-image: url('../img/Asia3.jpg');
+    background-image: url('../img/Africa2.jpg');
 }
 .item4{
-    background-image: url('../img/Asia4.jpg');
+    background-image: url('../img/Africa1.jpg');
 }
 
 .bg{

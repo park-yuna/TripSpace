@@ -95,15 +95,38 @@ function click(){
     $("#ex_chk6, #ex_chk66").click(function(){
         $('#ticketBox2').css('display','block');
         $('#ticketBox1, #ticketBox3, #ticketBox4').css('display','none');
-        $('.container2').css('height','900px');
+        var w = $(window).width();
+        if(w < 1680){
+            $('.container2').css('height','900px');
+            $('.container2 ').css('top','37%');
+            $('.bg2').css('height','2260px');
+            $('#wrapper').css('top','44.8%');
+            $('body').css('height','900px');
+        }else{
+            $('.container2').css('height','970px');
+            $('.container2 ').css('top','28%');
+            $('#wrapper').css('top','33%');
+            $('.bg2').css('height','245vh');
+        }
     });
     
     $("#ex_chk7, #ex_chk77").click(function(){
         $('#ticketBox3, #ticketBox4').css('display','block');
         $('#ticketBox2').css('display','none');
         $('#ticketBox1').css('display','none');
-        $('.container2').css('height','990px');
-        
+        var w = $(window).width();
+        if(w < 1680){
+            $('.container2').css('height','990px');
+            $('.container2 ').css('top','47%');
+            $('.bg2').css('height','2296px');
+            $('#wrapper').css('top','48.7%');
+            $('body').css('height','840px');
+        }else{
+            $('.container2').css('height','1070px');
+            $('.container2 ').css('top','32.3%');
+            $('#wrapper').css('top','32%');
+            $('.bg2').css('height','255vh');
+        }
     });
 }
 

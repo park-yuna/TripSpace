@@ -229,27 +229,51 @@ function loginCheck(){
 
 function click(){
     $("#long").click(function(){
-        //$('#ticketBox2').css('display','block');
         $('#long').css({'background-color':'rgb(36, 42, 58)', 'color':'#ffffff'});
         $('#shot').css({'background-color':'#ffffff', 'color':'rgb(36, 42, 58)'});
         $('.RentalContainer2').css('display','none');
         $('.RentalContainer').css('display','block');
-        $('.container2').css('height','1040px');
-        $('#wrapper').css('top','41.5%');
-        $('.container2').css('top','45%');
-        $('body').css('height','890px');
+
+        var w = $(window).width();
+        if(w < 1680){
+            $('.container2').css('height','1040px');
+            $('.container2').css('top','45%');
+            $('#wrapper').css('top','41.5%');
+            $('.bg2').css('height','2300px');
+            $('body').css('height','900px');
+        }else{
+            $('.container2').css('height','1150px');
+            $('.container2').css('top','15%');
+            $('#wrapper').css('top','15%');
+            $('body').css('height','180vh');
+            $('.bg2').css('height','270vh');
+            $('.dott, .dott3').css('bottom','-60px');
+            $('.bar, .bar2, .bar3, .bar4').css({'top':'-178px', 'height':'215px' });
+        }
     });
 
     $("#shot").click(function(){
-        //$('#ticketBox2').css('display','block');
         $('#shot').css({'background-color':'rgb(36, 42, 58)', 'color':'#ffffff'});
         $('#long').css({'background-color':'#ffffff', 'color':'rgb(36, 42, 58)'});
         $('.RentalContainer').css('display','none');
         $('.RentalContainer2').css('display','block');
-        $('.container2').css('height','900px');
-        $('.container2').css('top','20%');
-        $('#wrapper').css('top','25%');
-        $('body').css('height','1200px');
+
+        var w = $(window).width();
+        if(w < 1680){
+            $('.container2').css('height','900px');
+            $('.container2').css('top','38.5%');
+            $('#wrapper').css('top','45.2%');
+            $('.bg2').css('height','2200px');
+            //$('body').css('height','900px');
+        }else{
+            $('.container2').css('height','990px');
+            $('.container2').css('top','18%');
+            $('#wrapper').css('top','20%');
+            $('body').css('height','150vh');
+            $('.bg2').css('height','245vh');
+            $('.dott, .dott3').css('bottom','-20px');
+            $('.bar, .bar2, .bar3, .bar4').css({'top':'-136px', 'height':'172px' });
+        }
     });
 }
 
