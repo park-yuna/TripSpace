@@ -78,7 +78,7 @@ var BestInfo = [
         tourTitle3 : "몰디브 이나후라 리조트 7일",
         tourDetail1 : "그동안 동남아에서 느낄 수 없었던 감동! 웅장한 호수위의 평화로운 미얀마의 색다름을 경험해보세요.",
         tourDetail2 : "시간이 멈춘 나라, 라오스! 그림속을 여행하는 듯한 착각에 빠지게 만드는 자연의 절경을 만끽하세요.",
-        tourDetail3 : "5성급 이상 리조트로 구성된 몰디브 럭셔리 패키지 상품으로 여유로움을 만끽하세요.",
+        tourDetail3 : "5성급 이상 리조트로 구성된 몰디브 7일 럭셔리 패키지 상품으로 여유로움을 만끽하세요.5성급 이상 리조트로 구성된 몰디브 7일 럭셔리 패키지 상품으로 여유로움을 만끽하세요.",
         price1 : "750,000원~",
         price2 : "989,900원~",
         price3 : "3,799,900원~",
@@ -361,13 +361,13 @@ function evtFunc(){
     $("#press1").click(function(){
         $("#cfixed").css("display","block");
         $(".subNav3").css("display","none");
-        $("#arrow-left, #arrow-right, .header, .display-section").css("display","none"); 
+        $("#arrow-left, #arrow-right, .header, .display-section, .display-section2").css("display","none"); 
     });
     $("#press2").click(function(){
         $("#cfixed").css("display","block");
         $(".subNav3").css("display","block");
         $(".subNav2").css("display","none");
-        $("#arrow-left, #arrow-right, .header, .display-section").css("display","none"); 
+        $("#arrow-left, #arrow-right, .header, .display-section, .display-section2").css("display","none"); 
     });
     $("#overnav").click(function(){
         $(".subNav2").css("display","none");

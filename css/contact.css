@@ -396,9 +396,9 @@ input[type="checkbox"]:checked + label:after { /* 체크박스를 체크했을�
     color: #fff;
     font-weight: 200;
     letter-spacing: 0.03rem;
-    position: relative;
-    width: 100%;
+    position: absolute;
     bottom: 0; 
+    width: 100%;
 }
 
 .footer_logo{

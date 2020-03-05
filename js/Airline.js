@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 // datepicker
 function createDatePicker(){
-    $( "#datepicker1" ).datepicker({
+    $( "#datepicker1, #datepicker2" ).datepicker({
         dateFormat: 'yy-mm-dd',
         minDate: new Date()
     })

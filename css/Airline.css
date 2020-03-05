@@ -993,9 +993,9 @@ a:hover{color:#1bc1a3;} */
     color: #fff;
     font-weight: 200;
     letter-spacing: 0.03rem;
-    position: relative;
-    bottom: -45px;
-     
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer_logo{

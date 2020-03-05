@@ -345,13 +345,13 @@ function evtFunc(){
     $("#press1").click(function(){
         $("#cfixed").css("display","block");
         $(".subNav3").css("display","none");
-        $("#arrow-left, #arrow-right, .header, .display-section").css("display","none"); 
+        $("#arrow-left, #arrow-right, .header, .display-section, .display-section2").css("display","none"); 
     });
     $("#press2").click(function(){
         $("#cfixed").css("display","block");
         $(".subNav3").css("display","block");
         $(".subNav2").css("display","none");
-        $("#arrow-left, #arrow-right, .header, .display-section").css("display","none"); 
+        $("#arrow-left, #arrow-right, .header, .display-section, .display-section2").css("display","none"); 
     });
     $("#overnav").click(function(){
         $(".subNav2").css("display","none");
